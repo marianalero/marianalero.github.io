@@ -12,12 +12,11 @@
 *
 * ======================================================= */
 body {
-  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
-  color: #777777;
-  color: #7f7f7f;
+  color: black;
   background: #fff;
   height: 100%;
   position: relative;
@@ -35,12 +34,43 @@ a:hover, a:active, a:focus {
 }
 
 p {
-  margin-bottom: 1.5em;
+  margin-bottom: .5em;
+ color: black;
+  
+}
+.row{
+  margin: none;
+}
+.subtitle{
+  /* font-family: 'Cormorant Garamond', serif; */
+  
+  margin-bottom: 10px;
+  font-size: 22px;
+  color:#000
+}
+.subtitle-white{
+  /* font-family: 'Cormorant Garamond', serif; */
+ 
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: white;
+}
+.texto{
+  font-size: 18px;
+  color:#000;
+  text-transform: initial;
+  margin-top: 10px;
 }
 
+.texto-blanco{
+  font-size: 16px;
+  color:white;
+  text-transform: initial;
+  margin-top: 10px;
+}
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
 }
 
@@ -163,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 34px;
   padding-left: 0;
   color: #fff;
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
 }
 #qbootstrap-header.navbar-fixed-top {
   position: fixed !important;
@@ -616,7 +646,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-couple h3 {
   font-size: 34px;
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
   color: #0E6655;
 }
 @media screen and (max-width: 768px) {
@@ -777,7 +807,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   content: " ";
   width: 1px;
-  border-right: 1px dashed rgba(255, 132, 124, 0.8);
+  border-right: 1px dashed #C92615;
   left: 50%;
   margin-left: 0px;
 }
@@ -855,11 +885,11 @@ h1, h2, h3, h4, h5, h6 {
   left: 10px;
   right: 10px;
   content: '';
-  background: #f4f3e2;
+  background: #e0f2f1;
   z-index: -1;
 }
 .timeline > li > .timeline-panel .overlay.overlay-2 {
-  background: #fef6f8;
+  background: #FFF3F2;
 }
 .timeline > li > .timeline-badge {
   background-size: cover;
@@ -969,6 +999,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
+  background-position-x: 50%!important;
 }
 
 #qbootstrap-testimonials {
@@ -1008,7 +1039,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2em;
   float: left;
   background-color: white;
-  padding: 10px;
+  padding: 15px;
+  width: 100%;
 }
 #qbootstrap-testimonials .box-testimony a {
   color: rgba(255, 255, 255, 0.5);
@@ -1085,7 +1117,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 0;
   font-size: 30px;
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
   font-style: italic;
 }
 #qbootstrap-testimonials .arrow-thumb {
@@ -1129,7 +1161,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .groom-men h3 {
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 28px;
 }
 
@@ -1161,12 +1193,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 10px;
   right: 10px;
   content: '';
-  background: #f4f3e2;
+  background: white;
   z-index: -1;
 }
 .wedding-events .desc h3 {
   font-size: 40px;
-  color: #0E6655;
+  color: white;
   display: block;
   margin-bottom: 40px;
 }
