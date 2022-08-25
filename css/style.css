@@ -60,10 +60,11 @@ p {
   color:#000;
   text-transform: initial;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .texto-blanco{
-  font-size: 16px;
+  font-size: 18px;
   color:white;
   text-transform: initial;
   margin-top: 10px;
