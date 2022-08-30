@@ -686,9 +686,10 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-countdown {
   background-size: cover;
   position: relative;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   z-index: 0;
   width: 100%;
+  background-position-x: center;
 }
 #qbootstrap-countdown .section-heading {
   margin-bottom: 0 !important;
@@ -1574,26 +1575,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  border-radius: 100px;
+  
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 8px;
 }
 .btn.btn-primary {
+  /* background: #ad5389;
+  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+  border: none; */
   background: #0E6655;
   color: #fff;
-  border: none !important;
-  border: 2px solid transparent !important;
+ 
+  /* border: none !important;
+  border: 2px solid transparent !important; */
 }
+
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  box-shadow: none;
-  background: #0E6655;
+  background-color: initial;
+  background-position: 0 0;
+  color: #0E6655;
+  border: 2px solid #0E6655;
+  transform: scale(1.05) translateY(.125rem);
 }
-.btn:hover, .btn:active, .btn:focus {
-  background: #393e46 !important;
+.btn:hover, .btn:active, .btn:focus { 
   color: #fff;
   outline: none !important;
+  
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
