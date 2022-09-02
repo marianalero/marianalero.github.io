@@ -12,7 +12,7 @@
 *
 * ======================================================= */
 html{
-  width: auto;
+  width: 100vw;
   overflow-x: hidden;
 }
 body {
@@ -43,7 +43,8 @@ p {
   
 }
 .row{
-  margin: none;
+  margin-left: 0px!important;
+  margin-right: 0px!important;
 }
 .subtitle{
   /* font-family: 'Cormorant Garamond', serif; */
@@ -378,8 +379,12 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .video-hero {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
+  }
+  html{
+    width: auto;
+    overflow-x: hidden;
   }
 }
 .qbootstrap-cover .display-t,
@@ -826,6 +831,9 @@ h1, h2, h3, h4, h5, h6 {
   .timeline:before {
     margin-left: -60px;
   }
+  html{
+    overflow-x: hidden;
+  }
 }
 .timeline > li {
   margin-bottom: 20px;
@@ -1012,6 +1020,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-testimonials {
   background: #0E6655;
   z-index: 0;
+  width: 100%!important;
 }
 #qbootstrap-testimonials .overlay {
   position: absolute !important;

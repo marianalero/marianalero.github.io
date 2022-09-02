@@ -144,7 +144,8 @@ hr {
     width: auto;
     height: auto;
     margin: 0;
-    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: visible;
     clip: auto;
   }
 }
