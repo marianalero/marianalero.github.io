@@ -7,7 +7,8 @@
 		params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);});
 	console.log("se entro a la invitacion",params.number)
 		var number =(params.number == undefined )?0:params.number
-	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+" pases"
+		var pases = (number == 1) ? " pase" : " pases";
+	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
 	
 	// iPad and iPod detection	
 	var isiPad = function(){
