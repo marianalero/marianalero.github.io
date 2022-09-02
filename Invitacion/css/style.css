@@ -568,6 +568,7 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
     font-size: 30px;
   }
+  
 }
 #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .holder {
   color: #fff;
@@ -698,7 +699,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: repeat;
   z-index: 0;
   width: 100%;
-  background-position-x: center;
+  background-position-x: center!important;
 }
 #qbootstrap-countdown .section-heading {
   margin-bottom: 0 !important;
