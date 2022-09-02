@@ -889,6 +889,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   background: #e0f2f1;
   z-index: -1;
+  opacity: .3;
 }
 .timeline > li > .timeline-panel .overlay.overlay-2 {
   background: #FFF3F2;
@@ -1200,9 +1201,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wedding-events .desc h3 {
   font-size: 40px;
-  color: white;
+  color: #d7ae54;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .wedding-events .desc .date {
   display: block;
@@ -1312,7 +1313,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
-#qbootstrap-started .btn {
+/* #qbootstrap-started .btn {
   height: 54px;
   border: none !important;
   background: #0E6655;
@@ -1322,7 +1323,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
-}
+} */
 #qbootstrap-started .form-inline .form-group {
   width: 100% !important;
   margin-bottom: 10px;
@@ -1594,14 +1595,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8px;
 }
 .btn.btn-primary {
-  /* background: #ad5389;
-  background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
-  border: none; */
   background: #0E6655;
   color: #fff;
  
-  /* border: none !important;
-  border: 2px solid transparent !important; */
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
