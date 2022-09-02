@@ -11,6 +11,10 @@
 *	Edit this section
 *
 * ======================================================= */
+html{
+  width: auto;
+  overflow-x: hidden;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
