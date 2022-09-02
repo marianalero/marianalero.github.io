@@ -1615,7 +1615,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn.btn-primary {
   background: #0E6655;
-  color: #fff;
+  color: #fff!important;
  
 }
 
