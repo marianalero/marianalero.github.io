@@ -1755,5 +1755,14 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
+.image-circle{
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-image: url(images/Nos\ casamos.jpeg);
+  background-size: cover;
+  background-position-x: 50%!important;
+  /* margin-right: 0px; */
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
