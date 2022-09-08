@@ -323,12 +323,13 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-started,
 #qbootstrap-gallery,
 #qbootstrap-testimonials,
+#qbootstrap-testimonials-2,
 #qbootstrap-press {
   padding: 7em 0;
 }
 @media screen and (max-width: 480px) {
   #qbootstrap-couple,
-  #qbootstrap-countdown,
+ 
   #qbootstrap-groom-bride,
   #qbootstrap-story,
   #qbootstrap-people,
@@ -336,8 +337,13 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-started,
   #qbootstrap-gallery,
   #qbootstrap-testimonials,
+  #qbootstrap-testimonials-2,
   #qbootstrap-press {
     padding: 5em 0;
+  }
+
+  #qbootstrap-countdown{
+    padding: 7em 0;
   }
 }
 
@@ -695,12 +701,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #qbootstrap-countdown {
+  position: relative;
+  z-index: 0;
+  width: 100%;
   background-size: cover;
   position: relative;
   background-repeat: repeat;
-  z-index: 0;
-  width: 100%;
-  background-position-x: center!important;
+  background-position-x: 50%!important;
 }
 #qbootstrap-countdown .section-heading {
   margin-bottom: 0 !important;
@@ -1027,6 +1034,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #0E6655;
   z-index: 0;
   width: 100%!important;
+  background-size: cover;
+    position: relative;
+    background-repeat: repeat;
+    background-position-x: 50%!important;
 }
 #qbootstrap-testimonials .overlay {
   position: absolute !important;
@@ -1064,11 +1075,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 15px;
   width: 100%;
 }
-#qbootstrap-testimonials .box-testimony a {
-  color: rgba(255, 255, 255, 0.5);
-}
+
 #qbootstrap-testimonials .box-testimony a:hover, #qbootstrap-testimonials .box-testimony a:focus, #qbootstrap-testimonials .box-testimony a:active {
-  color: white;
+  color: #0E6655;
   text-decoration: none;
 }
 #qbootstrap-testimonials .box-testimony blockquote {
@@ -1616,7 +1625,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn.btn-primary {
   background: #0E6655;
-  color: #fff!important;
+  color: #fff;
  
 }
 
@@ -1626,6 +1635,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #0E6655;
   border: 2px solid #0E6655;
   transform: scale(1.05) translateY(.125rem);
+  font-weight: 700;
 }
 .btn:hover, .btn:active, .btn:focus { 
   color: #fff;
