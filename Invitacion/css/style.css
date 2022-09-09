@@ -2047,7 +2047,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .intinerario-container .intinerario-content h2 {
     margin: 0 0 10px 0;
-    font-size: 18px;
+    /* font-size:20px ; */
     font-weight: normal;
     color: #0E6655;
     text-align: center;
@@ -2055,7 +2055,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .intinerario-container.intinerario-right .intinerario-content h2 {
     margin: 0 0 10px 0;
-    font-size: 18px;
+    /* font-size: 20px; */
     font-weight: normal;
     color: #0E6655;
     text-align: center;
