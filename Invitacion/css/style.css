@@ -721,8 +721,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #qbootstrap-countdown .section-heading .datewed {
-  font-size: 24px;
+  font-size: 30px;
   color: white;
+  font-family: 'Great Vibes';
 }
 #qbootstrap-countdown .section-heading.svg-sm .svg {
   height: 180px;
