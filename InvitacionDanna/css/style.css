@@ -1627,7 +1627,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8px;
 }
 .btn.btn-primary {
-  background: #fff;
+  background: white;
   color: black;
   border: 1px solid black;
  
@@ -1636,8 +1636,8 @@ h1, h2, h3, h4, h5, h6 {
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   background-color: initial;
   background-position: 0 0;
-  color: #d7ae54;
-  border: 2px solid #d7ae54;
+  color: black;
+  border: 2px solid black;
   transform: scale(1.05) translateY(.125rem);
   font-weight: 700;
 }
