@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  background-position-x: 50%!important;
+  background-position-x: 40%!important;
 }
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
