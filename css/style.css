@@ -11,6 +11,10 @@
 *	Edit this section
 *
 * ======================================================= */
+html{
+  width: 100vw;
+  overflow-x: hidden;
+}
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
@@ -318,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .qbootstrap-hero {
-    /* height: 700px; */
+    height: 400px;
   }
 }
 
@@ -1005,7 +1009,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-testimonials .box-testimony {
   margin-bottom: 2em;
-  float: left;
 }
 #qbootstrap-testimonials .box-testimony a {
   color: rgba(255, 255, 255, 0.5);
