@@ -1010,9 +1010,9 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-testimonials .box-testimony {
   margin-bottom: 2em;
 }
-#qbootstrap-testimonials .box-testimony a {
+/* #qbootstrap-testimonials .box-testimony a {
   color: rgba(255, 255, 255, 0.5);
-}
+} */
 #qbootstrap-testimonials .box-testimony a:hover, #qbootstrap-testimonials .box-testimony a:focus, #qbootstrap-testimonials .box-testimony a:active {
   color: white;
   text-decoration: none;
@@ -1427,7 +1427,7 @@ h1, h2, h3, h4, h5, h6 {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 25px;
   height: 3px;
   color: #A41423;
