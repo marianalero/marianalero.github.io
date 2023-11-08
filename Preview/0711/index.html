@@ -73,7 +73,7 @@
 		<audio autoplay></audio>
 		<div class="qbootstrap-hero" data-section="home">
 		<div class="qbootstrap-overlay"></div>
-		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(./images/contador.jpg);">
+		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(./images/_MG_9950.jpg);">
 			<div class="display-t">
 				<div class="display-tc">
 					<div class="container" >
@@ -91,31 +91,35 @@
 			</div>
 		</div>
 		</div>	
-		<div class="row">
+		<div class="row" id="principal">
 			<div class="col-md-12 animate-box">
 				<div class="box-testimony text-center " style="width:100% ;">
 					<!-- <img src="./images/adorno4 (4).svg" style="height: 100px;" />	 -->
 					
 					<!-- <p style="font-family:'Parisienne', cursive;font-size: 40px;color:#000000" ></p> -->
 					<div style="margin-top: 30;margin-bottom: 30;">
-						<div class="texto">Por que eres parte de mi vida y has acompañado mi camino, quiero que seas parte de este momento tan importante para mi</div>
+						<div class="texto">Por que eres parte de mi vida y has acompañado mi camino, quiero que seas parte de este momento tan importante para mi,</div>
 						<p class="texto">A nombre de mis padres</p>
 						<div class="row" style="margin-bottom: 15px;" >
 							
 							<div class="col-xs-12 col-sm-4 text-center p-3">
-								<div style="font-family:'Parisienne', cursive;font-size: 24px;color: #f1ceda;text-transform: none;">Ignacio Cruz</div>
+								<div style="font-family:'Parisienne', cursive;font-size: 40px;color: #f1ceda;text-transform: none;font-weight: 600;">Ignacio Cruz</div>
 							</div>
 							
 							<div class="col-xs-12 col-sm-4 text-center p-3">
-								<div style="font-family:'Parisienne', cursive;font-size: 28px;color: #f1ceda;text-transform: none;"> &amp;</div>
+								<div style="font-family:'Parisienne', cursive;font-size: 40px;color: #f1ceda;text-transform: none;font-weight: 600;"> &amp;</div>
 							
 							</div>	
 							<div class="col-xs-12 col-sm-4 text-center p-3">
-								<div style="font-family:'Parisienne', cursive;font-size: 24px;color: #f1ceda;text-transform: none;">Ana María Ortiz</div>
+								<div style="font-family:'Parisienne', cursive;font-size: 40px;color: #f1ceda;text-transform: none;font-weight: 600;">Ana María Ortiz</div>
 							</div>
 						</div>
 
-						
+						<div class="row animate-box" style="margin-bottom: 15px;">
+							<div class="col-xs-12 col-sm-12 text-center p-3">
+								<div class="texto" >Tenemos el honor de invitarlos a celebrar mis XV años.</div>
+							</div>	
+						</div>
 					
 						
 					</div>
@@ -125,11 +129,7 @@
 
 			</div>	
 		</div>
-		<div class="row animate-box" style="margin-bottom: 15px;">
-			<div class="col-xs-12 col-sm-12 text-center p-3">
-				<div class="texto" >Tenemos el honor de invitarlos a celebrar mis XV años.</div>
-			</div>	
-		</div>
+		
 		<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(./images/portada3.jpg)" data-section="wedding-day">
 			<div class="overlay"></div>
 			<div class="display-over">
@@ -244,7 +244,7 @@
 			</div>
 		</div>
 
-		<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(./images/confirmacion.jpg);">
+		<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(./images/_MG_0081.jpg)">
 	
 			<div class="container">
 				<div class="row animate-box">
@@ -259,27 +259,44 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12">
-						<div class="form-inline">
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
+					
+							<div class="col-xs-4">
+								<p style="color: white;" class="texto">¿Asistirás?</label>
+							</div>
+							<div class="col-xs-3">							
+									<input type="radio" id="asistire"  name="confirm" value="confirm" />
+									<label for="asistire" class="texto"  style="color: white;font-weight: 400;">Si</label>									
+							</div>
+							
+							<div class="col-xs-3">
+								<input type="radio" id="noasistire"  name="confirm" value="notconfirm" />
+									<label for="noasistire" class="texto"  style="color: white;font-weight: 400;" >No</label>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								
 									<label for="name" class="sr-only">Nombre Completo</label>
 									<input type="name" class="form-control" id="name" placeholder="Nombre Completo">
-								</div>
+								
 							</div>
-							<div class="col-md-4 col-sm-4">
-								<!-- <div class="form-group">
-									<label for="phone" class="sr-only">Teléfono</label>
-									<input type="phone" class="form-control" id="phone" placeholder="Teléfono">
-								</div> -->
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<p style="color: white;" class="texto">Número de invitados</label>
 							</div>
-							<div class="col-md-4 col-sm-4">
+							<div class="col-sm-6 col-md-6 col-xs-12">
+								<select class="form-control" >								
+									<option value="1" style="color:black">1</option>
+									<option value="2" style="color:black">2</option>
+									<option value="3"style="color:black">3</option>
+									<option value="4" style="color:black">4</option>
+									<option value="5" style="color:black">5</option>
+								  </select>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
 								<button  id="confirmar" class="btn btn-primary btn-block" style="border-radius: 16px;">Confirmar</button>
 							</div>
 						</div>
-					</div>
 					
-				</div>
+					
+				
 			</div>
 		</div>
 
@@ -391,9 +408,7 @@
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup image-popup" href="images/_MG_0111.jpg"><img src="images/_MG_0111.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 					</div>
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/_MG_0081.jpg"><img src="images/_MG_0081.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
+				
 					
 				</div>
 				

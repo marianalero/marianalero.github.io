@@ -301,7 +301,19 @@
 		number = number.substring(30,32);
 		// number = number.slice(-6);
 		console.log("confirmando",name,number);
-		window.open("https://wa.me/+526624612204/?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20María%20Monserrat%20para%20"+number+" personas. Mi nombre es "+name,"_blank");
+		let telefono="662145921233"
+		let url = 	'https://docs.google.com/forms/d/e/1FAIpQLSc3jxqtjSl3PToPgAVCX_7YewWS6PCi5bpsuoA6IVz1vcB8jg/formResponse?entry.335062871='+name+'&entry.592002636='+number.trim()+'&entry.1306266917='+telefono+'&submit=Submit';
+		console.log(url);
+		fetch(url, { method: 'POST', 
+		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
+		redirect: "follow",
+		referrer: "no-referrer",
+		headers: {
+		  'Content-Type': 'application/x-www-form-urlencoded',
+		},
+		 } )
+		.then(res=> {console.log(res)})
+		.catch(reason => console.log(reason));
 		
 	
 	}
@@ -344,6 +356,9 @@
 		contentWayPoint();
 		inlineSVG();
 		bgVideo();
+
+
+		$('#asistire').prop('checked',true);
 	});
 
 
