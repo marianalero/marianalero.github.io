@@ -300,9 +300,11 @@
 		var number = document.getElementById("numInv").innerHTML;
 		number = number.substring(30,32);
 		// number = number.slice(-6);
+		console.log();
+		var selNumInv = $( "#selNumInv" ).val();
 		console.log("confirmando",name,number);
 		let telefono="662145921233"
-		let url = 	'https://docs.google.com/forms/d/e/1FAIpQLSc3jxqtjSl3PToPgAVCX_7YewWS6PCi5bpsuoA6IVz1vcB8jg/formResponse?entry.335062871='+name+'&entry.592002636='+number.trim()+'&entry.1306266917='+telefono+'&submit=Submit';
+		let url = 	'https://docs.google.com/forms/d/e/1FAIpQLSc3jxqtjSl3PToPgAVCX_7YewWS6PCi5bpsuoA6IVz1vcB8jg/formResponse?entry.335062871='+name+'&entry.592002636='+selNumInv+'&entry.1306266917='+telefono+'&submit=Submit';
 		console.log(url);
 		fetch(url, { method: 'POST', 
 		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
@@ -312,7 +314,10 @@
 		  'Content-Type': 'application/x-www-form-urlencoded',
 		},
 		 } )
-		.then(res=> {console.log(res)})
+		.then(res=> {
+			var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
+			confirmModal.show()
+		})
 		.catch(reason => console.log(reason));
 		
 	
