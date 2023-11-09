@@ -322,7 +322,7 @@
     let audioEtiqueta = document.querySelector("audio")
 
     boton.addEventListener("click", () => {
-		audioEtiqueta.setAttribute("src", "./audio/cancion (2).mp3")
+		audioEtiqueta.setAttribute("src", "./audio/cancion.mp3")
 		var play = boton.classList.contains('play');
 		let icon = document.getElementById("btn-flotante-icon")
 		if(play){
@@ -359,7 +359,17 @@
 
 
 		$('#asistire').prop('checked',true);
+	
+		var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+		myModal.show()
+		
+		$("#btnEntrar").click(function(){
+			myModal.hide()
+			let boton = document.querySelector(".btn-flotante")
+			boton.click();
+		});
 	});
 
+	
 
 }());
