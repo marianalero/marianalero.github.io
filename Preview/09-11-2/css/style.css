@@ -1867,7 +1867,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 12px;
   height: 12px;
-  top: calc(50% - 1px);
+  top: calc(60%);
   right: -6px;
   background: #F5A5B5;
   border: 2px solid #F5A5B5;
@@ -1884,7 +1884,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   width: 54px;
   height: 2px;
-  top: calc(50% + 4px);
+  top: calc(60% + 4px);
   right: 4px;
   background: #F5A5B5;
   z-index: 1;
@@ -1918,8 +1918,8 @@ h1, h2, h3, h4, h5, h6 {
 .intinerario-container .intinerario-icon {
   position: absolute;
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   padding: 9px 0;
   top: calc(50% - 30px);
 
@@ -2079,10 +2079,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
   .intinerario-container.intinerario-right .intinerario-icon {
-   left: -95px;
+   left: -115px;
   }
   .intinerario-container.intinerario-left .intinerario-icon{
-    right: -95px;
+    right: -115px;
   }
 
   .intinerario-container.intinerario-left .intinerario-content
