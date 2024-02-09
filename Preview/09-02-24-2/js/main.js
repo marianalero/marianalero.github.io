@@ -312,10 +312,10 @@
 				numbertext=  selNumInv+' personas.'
 			}
 			else{
-				numbertext=  '1 personas.'
+				numbertext=  '1 persona.'
 			}
 			
-			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Ana%20Sarai%20y%20Luis%20Edmundo"+numbertext+" A nombre de "+name;
+			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Ana%20Sarai%20y%20Luis%20Edmundo%20para"+numbertext+" A nombre de "+name;
 		}
 		else
 		{
