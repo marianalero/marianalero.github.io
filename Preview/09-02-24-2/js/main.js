@@ -315,11 +315,11 @@
 				numbertext=  '1 personas.'
 			}
 			
-			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Valeria%20y%20Tadeo%20para%20"+numbertext+" A nombre de "+name;
+			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Ana%20Sarai%20y%20Luis%20Edmundo"+numbertext+" A nombre de "+name;
 		}
 		else
 		{
-			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Valeria%20y%20Tadeo. Mi nombre es "+name;
+			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20boda%20de%20Ana%20Sarai%20y%20Luis%20Edmundo. Mi nombre es "+name;
 			
 		}
 
