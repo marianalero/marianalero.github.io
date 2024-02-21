@@ -22,7 +22,25 @@
 	    );
 	};
 
-	
+	// let boton = document.querySelector(".reproductor")
+    // let audioEtiqueta = document.querySelector("audio")
+
+    // boton.addEventListener("click", () => {
+	// 	audioEtiqueta.setAttribute("src", "./audio/cancion3.mp3")
+	// 	var play = boton.classList.contains('play');
+	// 	if(play){
+	// 		boton.classList.add('pause')
+	// 		boton.classList.remove('play')
+	// 		audioEtiqueta.pause()
+	// 	}else{
+	// 		boton.classList.remove('pause')
+	// 		boton.classList.add('play')
+	// 		audioEtiqueta.play()
+	// 	}
+      
+      
+    //   console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+    // });
 
 	// Carousel Feature Slide
 	var testimonialCarousel = function(){
@@ -257,6 +275,43 @@
 
 		});
 	};
+	
+	const formatNumber = n => ("0" + n).slice(-2);
+	// Set the date we're counting down to
+		var countDownDate = new Date("April 05, 2024 19:00:00").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+
+		// Get todays date and time
+		var now = new Date().getTime();
+
+		// Find the distance between now an the count down date
+		var distance = countDownDate - now;
+
+		// Time calculations for days, hours, minutes and seconds
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		// Display the result in an element with id="demo"
+		// document.getElementById("demo").innerHTML = days + "Days " + hours + "Hours "
+		// + minutes + "Minutes " + seconds + "Seconds ";
+
+		// Display the result in an element with id="demo"
+		document.getElementById("days").innerHTML = formatNumber(days) +"<br/> <span style='font-size: 16px;'>Días</span>";
+		document.getElementById("hours").innerHTML = formatNumber(hours) + "<br/> <span style='font-size: 16px;'>Hrs</span>";
+		document.getElementById("minutes").innerHTML = formatNumber(minutes) + "<br/> <span style='font-size: 16px;'>Mins</span>";
+		document.getElementById("seconds").innerHTML = formatNumber(seconds) + "<br/> <span style='font-size: 16px;'>Segs</span>";
+
+		// If the count down is finished, write some text 
+		if (distance < 0) {
+		 clearInterval(x);
+		 document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";
+		}
+		}, 1000);	
+	
 		
 	var bgVideo = function() {
 		$('.player').mb_YTPlayer();
@@ -264,48 +319,44 @@
     
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
-		
+		var name = document.getElementById("name").value
+		var telefono = document.getElementById("telefono").value
 		var number = document.getElementById("numInv").innerHTML;
 		number = number.substring(30,32);
 		// number = number.slice(-6);
-		console.log("confirmando",number);
-		var message ="Hola,%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Juan%20Antonio%20y%20Neftali%20para%20"+number+"%20personas";
-		console.log(message)
-		window.open("https://wa.me/+526621454135/?text="+message,"_blank");
+		var confirmText = "";
+		var selNumInv = number;
+		var radioValue = $("input[name='confirm']:checked").val();
+		if(radioValue == "confirm"){
+			confirmText = "Asistiré"
+		}
+		else
+		{
+			confirmText = "No asistiré";
+			selNumInv =0;
+		}
+
+		
+		let url = "https://docs.google.com/forms/d/e/1FAIpQLSeZgCf2FCmVJ12hgc-wZzjmYbYalw-6xiWNEOSwj67HvP5S7w/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+	
+		fetch(url, { method: 'GET', 
+		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
+		redirect: "follow",
+		referrer: "no-referrer",
+		headers: {
+		  'Content-Type': 'application/x-www-form-urlencoded',
+		},
+		 } )
+		.then(res=> {
+			var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
+			confirmModal.show()
+		})
+		.catch(reason => console.log(reason));
 		
 	
 	}
 
-	var end = new Date('04/05/2024 7:00 PM');
-
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
-
-	function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        if (distance < 0) {
-
-            clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
-
-            return;
-        }
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
-
-        document.getElementById("days").innerHTML = days +"<br/> <span style='font-size: 20px;'>Días</span>";
-		document.getElementById("hours").innerHTML = hours + "<br/> <span style='font-size: 20px;'>Hrs</span>";
-		document.getElementById("minutes").innerHTML = minutes + "<br/> <span style='font-size: 20px;'>Mins</span>";
-		document.getElementById("seconds").innerHTML = seconds + "<br/> <span style='font-size: 20px;'>Segs</span>";
-    }
-
-    timer = setInterval(showRemaining, 1000);
+	
 
 	// Document on load.
 	$(function(){
@@ -320,6 +371,8 @@
 		contentWayPoint();
 		inlineSVG();
 		bgVideo();
+
+		$('#asistire').prop('checked',true);
 	});
 
 

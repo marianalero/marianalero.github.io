@@ -7,7 +7,7 @@
 		
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Boda Juan Antonio  & Neftali </title>
+	<title>Boda  Juan Antonio  & Neftali</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Free HTML5 Template by QBOOTSTRAP.COM" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -37,13 +37,14 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif&family=PT+Serif+Caption&family=Parisienne&display=swap" rel="stylesheet">	<!-- Animate.css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif&family=PT+Serif+Caption&family=Parisienne&display=swap" rel="stylesheet">	<!-- Animate.css -->
+	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
@@ -59,24 +60,41 @@
 	
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
 	</head>
 	<body>
-
-	
+		<div  class="modal fade " id="confirmModal" aria-hidden="true" aria-labelledby="confirmModalLabel" tabindex="-1">>
+			<div class="modal-dialog ">
+			<div class="modal-header">
+					
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+			  <div class="modal-content">
+				<div class="modal-body text-center">
+					<h3>Confirmación enviada</h3>
+				
+				</div>
+			  </div>
+			</div>
+		  </div>
 		<div class="qbootstrap-hero" data-section="home">
 		<div class="qbootstrap-overlay"></div>
 		<div class="qbootstrap-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(./images/portada.jpg);">
 			<div class="display-t">
 				<div class="display-tc">
 					<div class="container" >
-						<div class="col-md-10 col-md-offset-1">
+						<div class="col-md-12">
 							<div class="animate-box svg-sm colored">
 								
 								<h1 class="holder"><span>Nuestra boda</span></h1>
 								<h2 class="portada">Juan Antonio <br/> &amp; <br/> Neftali </h2>
 								<p>05.04.2024</p>
-						
 							
 							</div>
 						</div>
@@ -84,36 +102,21 @@
 				</div>
 			</div>
 		</div>
-		</div>
-		<div id="qbootstrap-couple" class="qbootstrap-section-gray" style="padding-top: 4em;padding-bottom:4em;" >
+		</div>		
+		<div id="qbootstrap-couple" class="qbootstrap-section-gray" >
 			<div class="overlay"></div>
 			<div class="container">
-				
-				<div class="row animate-box">
-					<!-- <div class="col-md-8 col-md-offset-2 animate-box text-center">
-						<div style="background-image: url(./images/galeria9.jpg);" class="image-circle"></div>	
-					</div>
-					<div class="col-md-8 col-md-offset-2 animate-box text-center">
-						<div style="background-image:url(./images/galeria10.jpg);" class="image-circle"></div>
-					</div> -->
-					<div class="col-md-8 col-md-offset-2 animate-box">
-						<div class="col-md-12 text-center section-heading svg-sm colored" style="margin-top:25px">
-							<div class="texto">Te elijo hoy, mañana y por el resto de mi vida.</div>
-							
-						</div>
-					</div>
-				</div>
 				<div class="row animate-box" >
-					<div class="col-md-8 col-md-offset-2 text-center">
-						<img src="./images/adorno4 (4).svg" style="width: 200px;">
+					<div class="col-md-12 text-center">
+						<div class="texto">Te elijo hoy, mañana y por el resto de mi vida.</div>
 					</div>
-				</div>
-
-				<div class="row animate-box" >
-					<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="col-md-12 text-center" >
+						<img src="./images/adorno4 (4).svg" width="200px" >
+					</div>
+					<div class="col-md-12 text-center">
 						<h3 style="font-family: 'DM Serif Display', serif;">Nuestra canción</h6>
 					</div>
-					<div class="col-md-8 col-md-offset-2 text-center" style="margin-bottom: 20px;margin-top: 20px;">
+					<div class="col-md-12 text-center" style="margin-bottom: 20px;margin-top: 20px;">
 							<audio id="audio" controls autoplay playsinline >
 								<source src="./audio/cancion.mp3" type="audio/mpeg">
 							</audio>
@@ -121,25 +124,16 @@
 					</div>
 					
 				</div>
-				
+								
 			</div>
 		</div>
-		<div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetings" data-stellar-background-ratio="0.5" style="height: 100vh;background-image: url(images/Frase.jpg);">
+		<div id="qbootstrap-testimonials" class="qbootstrap-greetings img-enmedio" data-section="greetings" data-stellar-background-ratio="0.5" style=" background-image: url(./images/Frase.jpg);">
 			<div class="overlay"></div>	
 				<div class="container" style="height: 600px; ;">
-					<div class="row animate-box">
-						
-					</div>
-					<div class="row animate-box">
-						
-					</div>
+					
 				</div>
 		</div>
-	
 		<div class="row">
-			<div class="col-md-12 animate-box text-center">
-				<img src="./images/adorno4 (4).svg" style="width: 200px;">
-			</div>
 			<div class="col-md-12 animate-box">
 				<div class="box-testimony text-center " style="width:100% ;">
 					<!-- <img src="./images/adorno4 (4).svg" style="height: 100px;" />	 -->
@@ -155,10 +149,7 @@
 								<div style="font-family:'Parisienne', cursive;font-size: 24px;color: #02311f;text-transform: none;">Edith Orduño López</div>
 
 							</div>
-							<!-- <div class="col-xs-12 col-sm-4 text-center p-3">
-								
 							
-							</div>	 -->
 							<div class="col-xs-12 col-sm-4 text-center p-3">
 								<div style="font-family:'Parisienne', cursive;font-size: 24px;color: #02311f;text-transform: none;"> &amp;</div>
 							
@@ -168,10 +159,7 @@
 								<div style="font-family:'Parisienne', cursive;font-size: 24px;color: #02311f;text-transform: none;">Martín E. Palma Villa</div>
 								<div style="font-family:'Parisienne', cursive;font-size: 24px;color: #02311f;text-transform: none;">Francisca Amavizca Cruz</div>
 							</div>
-							<!-- <div class="col-xs-12 col-sm-6 text-center p-3">				
-								
-								
-							</div> -->
+						
 							<div class="col-xs-12 col-sm-12 text-center p-3">
 								<div class="texto" >Uniremos nuestras vidas en santo matrimonio</div>
 							</div>	
@@ -181,33 +169,30 @@
 					
 						
 					</div>
-				<!-- <img src="./images/adorno4.1.svg" style="height: 100px;" />	 -->
+		
 				</div>
 
 
 			</div>	
-			<div class="col-md-12 animate-box text-center">
-				<img src="./images/adorno4 (4).svg" style="width: 200px;">
-			</div>
 		</div>
 		<div class="row" style="margin-bottom: 15px;">
 			<div class="col-xs-12 col-sm-12 text-center p-3">
 				<div class="texto" >Junto con nuestras familias, tenemos el gusto de invitarlos a nuestra unión.</div>
 			</div>	
 		</div>
-		<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(./images/contador.jpg);" data-section="wedding-day">
+		<div id="qbootstrap-countdown" data-stellar-background-ratio="0.5" style="background-image: url(./images/contador.jpg)" data-section="wedding-day">
 			<div class="overlay"></div>
 			<div class="display-over">
 				<div class="container" style="height:200px">
 					<div class="row animate-box">
 						<div class="col-md-12 section-heading text-center svg-sm colored">
 							
-						
+							<!-- <h2 class="">Nos casamos</h2> -->
 							<span class="datewed" style="text-transform: none;">Viernes 05 de Abril 2024</span>
 						</div>
 					</div>
 					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="col-md-12 text-center">
 							<p class="countdown">
 								<span class="" id="days">48 <br/> <span style="font-size: 16px;">Días</span></span>
 								<span class="" id="hours">21<br/> <span style="font-size: 16px;">Hrs</span></span>
@@ -219,6 +204,7 @@
 				</div>
 			</div>
 		</div>
+	
 		<div class="row">
 			<div class="col-md-12 animate-box">
 				<div class="box-testimony text-center " style="width:100% ;margin-top: 50px;">
@@ -234,10 +220,13 @@
 						<div class="col-xs-12 col-sm-12 text-center p-3">
 							
 							<p style="font-size: 16px;" >
-								Gildardo Aurelio Echeverría Villanueva <br/> &amp;<br>  Judith Valencia Hernández </br> 
+								Gildardo Aurelio Echeverría Villanueva <br/>   Judith Valencia Hernández </br> 
 							</p>
 							<p style="font-size: 16px;" >
-								José Reynaldo Vásquez Millán <br/> &amp;<br> Dalia Carolina Amavizca Cruz </br> 
+							 &amp;
+							</p>
+							<p style="font-size: 16px;" >
+								José Reynaldo Vásquez Millán <br/>  Dalia Carolina Amavizca Cruz </br> 
 								
 							</p>
 						</div>
@@ -252,7 +241,6 @@
 			</div>
 		</div>
 
-
 		<div id="qbootstrap-when-where" data-section="when-where">
 			<div class="container">
 				<div class="row row-bottom-padded-md">
@@ -262,16 +250,17 @@
 							<div class="desc">
 								<h3>Iglesia</h3>
 								<div class="row">
-									<div class="col-md-2 col-md-push-5" style="height: 50px;">
-										<div class="icon-tip">
-											<span class="icon"><i class="icon-heart-o"></i></span>
-										</div>
-									</div>
+									
 									<div class="col-md-5 col-md-pull-1">
 										<div class="date">
 											<i class="icon-calendar"></i>
 											<span>Viernes</span>
 											<span>05 Abril 2024</span>
+										</div>
+									</div>
+									<div class="col-md-2 col-md-push-5" style="height: 50px;">
+										<div class="icon-tip">
+											<span class="icon"><i class="icon-heart-o"></i></span>
 										</div>
 									</div>
 									<div class="col-md-5 col-md-pull-1">
@@ -294,16 +283,17 @@
 							<div class="desc">
 								<h3>Civil & Recepción</h3>
 								<div class="row">
-									<div class="col-md-2 col-md-push-5" style="height: 50px;">
-										<div class="icon-tip">
-											<span class="icon"><i class="icon-heart-o"></i></span>
-										</div>
-									</div>
+									
 									<div class="col-md-5 col-md-pull-1">
 										<div class="date">
 											<i class="icon-calendar"></i>
 											<span>Viernes</span>
 											<span>05 de Abril de 2023</span>
+										</div>
+									</div>
+									<div class="col-md-2 col-md-push-5" style="height: 50px;">
+										<div class="icon-tip">
+											<span class="icon"><i class="icon-heart-o"></i></span>
 										</div>
 									</div>
 									<div class="col-md-5 col-md-pull-1">
@@ -328,7 +318,6 @@
 				</div>
 			</div>
 		</div>
-		
 		
 
 	<!--intinerario-->
@@ -377,34 +366,65 @@
 			</div>
 		</div>
 	</div>
- <!--mesa de regalos-->
+
 			
 	
 
-		<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(./images/confirmacion.jpg);">
-	
+		<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-image: url(./images/confirmacion.jpg);     padding-top: 2em;background-position-x: 60%!important;">
+	<div class="overlay"></div>
 			<div class="container">
 				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center">											
-						<h2 id="" style="font-family:'Parisienne', cursive;font-size: 40px;color: white;">¡Confirma tu asistencia!</h2>
-						<p class="texto" style="color: white;" >¡Queremos compartir este momento tan esperado contigo!<br>
-							Por favor ayúdanos confirmando tu asistencia antes del 17 de Marzo 2024.
-					
+					<div class="col-md-12 text-center">											
+						<h2 id="" style="font-family:'Parisienne', cursive;font-size: 40px;color:white">¡Confirma tu asistencia!</h2>
+						<p class="texto" style="color:white;">¡Queremos compartir este momento tan esperado contigo!<br>
+							Por favor ayúdanos confirmando tu asistencia con tu nombre y el de tus acompañantes antes del 17 de Marzo 2024.<br>
 							</p>
 						<div class="row">
-							<div class="col-md-10 col-md-offset-1 subtext text-center" >
-								<div  class="texto" id="numInv"   style="color: white;"  >Esta invitación es valida por # pases</div>
+							<div class="col-md-12 subtext text-center" >
+								<div  class="texto" id="numInv" style="color:white" >Esta invitación es valida por # pases</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-xs-12">
-						<button  id="confirmar" class="btn btn-primary btn-block">Confirmar</button>
+					<div class="row">
+						<div class="col col-xs-4 col-sm-4 col-md-6 col-lg-6">
+							<p style="color: white;" class="texto">¿Asistirás?</label>
+						</div>
+						<div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3">							
+								<input type="radio" id="asistire"  name="confirm" value="confirm" />
+								<label for="asistire" class="texto"  style="color: white;font-weight: 400;">Si</label>									
+						</div>
+						
+						<div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							<input type="radio" id="noasistire"  name="confirm" value="notconfirm" />
+								<label for="noasistire" class="texto"  style="color: white;font-weight: 400;" >No</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<input type="name" class="form-control" id="name" placeholder="Nombre Completo">
+							
+						</div>
+			
+					</div>
+					<div class="row" style="margin-top: 5px;">
+						<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<input type="telefono" class="form-control" id="telefono" placeholder="Teléfono">
+							
+						</div>
+			
+					</div>
+					<div class="row">
+						<div class="col col-md-12 col-sm-12 col-xs-12 text-center" >
+							<button  id="confirmar" class="btn btn-primary btn-block" style="border-radius: 16px;width: 100%;">Confirmar</button>
+						</div>
 					</div>
 					
 				</div>
 			</div>
 		</div>
-
+		
+		
+		
 		<div id="qbootstrap-testimonials" class="qbootstrap-greetings" data-section="greetings" data-stellar-background-ratio="0.5" style="background-color: rgb(236,230,218);">
 		
 			<div class="container">
@@ -412,139 +432,146 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-12 animate-box text-center">
 						<div class="box-testimony ">
-						<img src="./images/iconos-neftali/5.svg" style="height: 72px;" />	
+					
 						<p class="text-center" style="font-size: 14px;">Lo más importante para nosotros es su presencia pero si desea hacernos un obsequio apreciamos sea en efectivo. <br>
 					
-						4152 3140 1901 5240 <br>
-						BBVA débito<br>
-						Neftali Olano Orduño </p>
+						</p>
+						<img src="./images/iconos-neftali/5.svg" style="height: 72px;" />	
+						<p  class="text-center" style="font-size: 14px;">
+							4152 3140 1901 5240 <br>
+							BBVA débito<br>
+							Neftali Olano Orduño 
+						</p>
 						</div>
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		
+
 
 	
-	<!-- Vestimenta -->
-	<div class="row" style="margin-top: 50px;margin-bottom: 50px;">
-		<div class="col-md-12 animate-box">
-		<div class="box-testimony text-center " style="width:100% ;">
-		
-		
-		<h4 style="font-family:'Parisienne', cursive;font-size: 40px;color:#02311f" >Código de vestimenta</h4>
-	
-		<div class="row" style="margin-top: 20px;margin-bottom: 50px;">
-			<div class="col-xs-12 col-sm-12 text-center p-3">
-				<div class="subtitle" >Formal</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 text-center p-3">
-				<img src="./images/etiqueta.svg" height="200" />
-			</div>
+		<div class="row" style="margin-top: 50px;margin-bottom: 50px;">
+			<div class="col-md-12 animate-box">
+			<div class="box-testimony text-center " style="width:100% ;">
 			
 			
+			<h4 style="font-family:'Parisienne', cursive;font-size: 40px;color:#02311f" >Código de vestimenta</h4>
+		
+			<div class="row" style="margin-top: 20px;margin-bottom: 50px;">
+				<div class="col-xs-12 col-sm-12 text-center p-3">
+					<div class="subtitle" >Formal</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 text-center p-3">
+					<img src="./images/Dress-code-etiqueta.svg" height="200" />
+				</div>
+				
+				
+			</div>
+			
+		
+		
+		
+			</div>	
 		</div>
+		<div clas="row">
+			<div class="col-lg-12  animate-box text-center" >
+				<img src="./images/adorno4 (4).svg" style="width: 200px;">
+			</div>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 animate-box">
+			<div class="box-testimony text-center " style="width:100% ;padding: 16px;">	
+			<!-- <div class="subtitle" >¡Mamá y papá merecen un día libre!</div> -->
+			
+	
+			<p class="texto mt-2">Respetuosamente <b>no niños</b> <br> sin excepción.</p>
+			
+			
+			</div>
+	
+	
 		
-	
-	
-	
+		</div>
+
+		<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-color: rgb(236,230,218,.3);     padding-top: 2em;">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-12 text-center">													
+						<p class="texto" >Comparte con nosotros todas tus fotografías del evento, usando el siguiente #hashtag en todas tus publicaciones.</p>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 p-3 animate-box">
+								<img src="./images/instagram luciana.png" class="img-instagram"/>
+							</div>
+							<div class="col-md-12 col-sm-12 text-center p-3 animate-box">
+								<a class="btn-outlined btn-block" href="" target="_blank">
+									<i><img src="./images/icono instagram boton.png" height="20"/></i>
+									Ver filtro en instagram
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>	
-	</div>
-	<div clas="row">
-		<div class="col-lg-12  animate-box text-center" >
-			<img src="./images/adorno4 (4).svg" style="width: 200px;">
-		</div>
-	</div>
-	</div>
-	<div class="row">
-		<div class="col-md-12 animate-box">
-		<div class="box-testimony text-center " style="width:100% ;padding: 16px;">	
-		<!-- <div class="subtitle" >¡Mamá y papá merecen un día libre!</div> -->
 		
 
-		<p class="texto mt-2">Respetuosamente <b>no niños</b> <br> sin excepción.</p>
-		
-		
-		</div>
-
-
-	
-	</div>
-	
-	<div id="qbootstrap-started" class="qbootstrap-bg" data-section="rsvp" data-stellar-background-ratio="0.5" style="background-color: rgb(236,230,218,.3);     padding-top: 2em;">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center">													
-					<p class="texto" >Comparte con nosotros todas tus fotografías del evento, usando el siguiente #hashtag en todas tus publicaciones.</p>
-					<div class="row">
-						<div class="col-xs-12 col-sm-12 p-3 animate-box">
-							<img src="./images/instagram luciana.png" class="img-instagram"/>
+		<div id="qbootstrap-gallery" data-section="gallery">	
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup image-popup" href="images/galeria1.jpg"><img src="images/galeria1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 						</div>
-						<div class="col-md-12 col-sm-12 text-center p-3 animate-box">
-							<a class="btn-outlined btn-block" href="" target="_blank">
-								<i><img src="./images/icono instagram boton.png" height="20"/></i>
-								Ver filtro en instagram
-							</a>
+						
+					</div>			
+					<div class="col-md-6 col-sm-6">
+						
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup" href="images/galeria2.jpg"><img src="images/galeria2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						</div>
+						
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup image-popup" href="images/galeria3.jpg"><img src="images/galeria3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 						</div>
 					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup image-popup" href="images/galeria4.jpg"><img src="images/galeria4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup image-popup" href="images/galeria5.jpg"><img src="images/galeria5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-sm-6">
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup image-popup" href="images/galeria6.jpg"><img src="images/galeria1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup image-popup" href="images/galeria7.jpg"><img src="images/galeria7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="gallery animate-box">
+							<a class="gallery-img image-popup image-popup" href="images/galeria8.jpg"><img src="images/galeria8.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						</div>
+					</div>
+					
+					
+				
 				</div>
 			</div>
 		</div>
-	</div>	
 	
-	<div id="qbootstrap-gallery" data-section="gallery">	
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/galeria1.jpg"><img src="images/galeria1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-					
-				</div>			
-				<div class="col-md-6 col-sm-6">
-					
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/galeria2.jpg"><img src="images/galeria2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-					
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/galeria3.jpg"><img src="images/galeria3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/galeria4.jpg"><img src="images/galeria4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/galeria5.jpg"><img src="images/galeria5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-				</div>
-				
-				<div class="col-md-6 col-sm-6">
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/galeria6.jpg"><img src="images/galeria1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/galeria7.jpg"><img src="images/galeria7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/galeria8.jpg"><img src="images/galeria8.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-				</div>
-				
-				
-			
-			</div>
-		</div>
-	</div>
-
 
 	
 
