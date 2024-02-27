@@ -337,7 +337,7 @@
 		}
 
 		
-		let url = "https://docs.google.com/forms/d/e/1FAIpQLSeZgCf2FCmVJ12hgc-wZzjmYbYalw-6xiWNEOSwj67HvP5S7w/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+		let url = "https://docs.google.com/forms/d/e/1FAIpQLScWN4ZNkUfJRkB7tiiA7njhhHL_POOItqRjVqXzeROVEULlAg/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
 	
 		fetch(url, { method: 'GET', 
 		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"

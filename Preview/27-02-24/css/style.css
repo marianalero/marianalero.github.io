@@ -870,7 +870,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   .timeline:before {
-    margin-left: -60px;
+    margin-left: -30px;
     
   }
   html{
@@ -925,7 +925,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-panel {
-    width: 75% !important;
+    width: 55% !important;
+    padding: 25px!important;
   }
   .timeline > li > .timeline-panel:before {
     top: 30px;
@@ -972,8 +973,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   .timeline > li > .timeline-badge {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     margin-left: -20px !important;
   }
 }
