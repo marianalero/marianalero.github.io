@@ -278,7 +278,7 @@
 	
 	const formatNumber = n => ("0" + n).slice(-2);
 	// Set the date we're counting down to
-		var countDownDate = new Date("April 13, 2024 8:30:00").getTime();
+		var countDownDate = new Date("Oct 26, 2024 16:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -328,22 +328,30 @@
 		var selNumInv = number;
 		var radioValue = $("input[name='confirm']:checked").val();
 		if(radioValue == "confirm"){
-			var numbertext;
-			if(parseInt(number) > 1){
-				numbertext=  number+' personas.'
-			}
-			else{
-				numbertext=  ' 1 persona.'
-			}
-
-			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Luz%20y%20Carolina%20para%20"+numbertext+" A nombre de "+name+",Celular:"+telefono;
+			confirmText = "Asistiré"
 		}
 		else
 		{
-			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20boda%20de%20Luz%20y%20Carolina. Mi nombre es "+name+",Celular:"+telefono;
+			confirmText = "No asistiré";
+			selNumInv =0;
 		}
 
-		window.open("https://wa.me/+526621158951/?text="+ message,"_blank");
+		
+		//let url = "https://docs.google.com/forms/d/e/1FAIpQLSeZgCf2FCmVJ12hgc-wZzjmYbYalw-6xiWNEOSwj67HvP5S7w/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+		let url ="";
+		fetch(url, { method: 'GET', 
+		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
+		redirect: "follow",
+		referrer: "no-referrer",
+		headers: {
+		  'Content-Type': 'application/x-www-form-urlencoded',
+		},
+		 } )
+		.then(res=> {
+			var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
+			confirmModal.show()
+		})
+		.catch(reason => console.log(reason));
 		
 	
 	}

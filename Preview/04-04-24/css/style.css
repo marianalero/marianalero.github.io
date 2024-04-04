@@ -29,19 +29,19 @@ body {
   
 }
 .icon-calendar{
-  color: #F8D856;
+  color: #b20011;
 }
 .icon-clock2{
-  color: #F8D856;
+  color: #b20011;
 }
 a {
-  color: #5f2879;
+  color: #b20011;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #5f2879;
+  color: #b20011;
   outline: none;
 }
 
@@ -85,8 +85,8 @@ p {
   margin-top: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #5f2879;
-  font-family: "Parisienne",  cursive;
+  color: #b20011;
+  font-family: "Pinyon Script",  cursive;
   font-weight: 400;
   text-transform: none;
 }
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #qbootstrap-header .navbar-brand {
-    color: #9C9D93 !important;
+    color: #b20011 !important;
   }
   #qbootstrap-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
   }
   #qbootstrap-header #navbar li a:hover {
-    color: #9C9D93 !important;
+    color: #b20011 !important;
   }
   #qbootstrap-header #navbar li a span:before {
     background: transparent !important;
@@ -141,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #9C9D93 !important;
+    color: #b20011 !important;
   }
   #qbootstrap-header #navbar li.active a span:before {
     visibility: visible;
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #9C9D93;
+  background-color: #b20011;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 34px;
   padding-left: 0;
   color: #fff;
-  font-family: "Parisienne", cursive;
+  font-family: "Pinyon Script", cursive;
 }
 #qbootstrap-header.navbar-fixed-top {
   position: fixed !important;
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 #qbootstrap-header.navbar-fixed-top .navbar-brand {
-  color: #9C9D93;
+  color: #b20011;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
@@ -232,12 +232,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a:hover {
-  color: #9C9D93;
+  color: #b20011;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #9C9D93;
+  color: #b20011;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #adadad;
 }
 #qbootstrap-header .navbar-default .brand-slogan em {
-  color: #9C9D93;
+  color: #b20011;
   font-style: normal;
 }
 #qbootstrap-header a {
@@ -293,11 +293,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 .section-heading.colored .svg {
-  fill: #9C9D93;
+  fill: #b20011;
 }
 .section-heading h2 {
   font-size: 60px;
-  color: #9C9D93;
+  color: #b20011;
   display: block;
   padding-bottom: 20px;
   line-height: 1.5;
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80px;
   margin-bottom: 20px;
   font-weight: 300 !important;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Pinyon Script', cursive;
 }
 .qbootstrap-cover .display-tc h2 strong,
 .video-hero .display-tc h2 strong {
@@ -566,7 +566,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-slider-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
-  background: #9C9D93;
+  background: #b20011;
 }
 #qbootstrap-slider-hero .flexslider .flex-direction-nav {
   display: none;
@@ -671,7 +671,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-  background: #9C9D93 !important;
+  background: #b20011 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -686,8 +686,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-couple h3 {
   font-size: 34px;
-  font-family: "Parisienne", cursive;
-  color: #5f2879;
+  font-family: "Pinyon Script", cursive;
+  color: #b20011;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple h3 {
@@ -695,7 +695,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #qbootstrap-couple span {
-  color: #9C9D93;
+  color: #b20011;
   letter-spacing: 10px;
   text-transform: none;
   font-size: 14px;
@@ -705,7 +705,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-couple .amp-center {
   font-size: 60px;
   margin-top: 100%;
-  color: #9C9D93;
+  color: #b20011;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple .amp-center {
@@ -713,7 +713,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #qbootstrap-couple .amp-center .colored .svg {
-  fill: #9C9D93;
+  fill: #b20011;
 }
 
 .qbootstrap-bg {
@@ -755,7 +755,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-countdown .section-heading .datewed {
   font-size: 38px;
   color: white;
-  font-family: 'Parisienne','cursive';
+  font-family: 'Pinyon Script','cursive';
 }
 #qbootstrap-countdown .section-heading.svg-sm .svg {
   height: 180px;
@@ -844,7 +844,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 .couple .desc h2 {
-  color: #9C9D93;
+  color: #b20011;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -997,7 +997,7 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-title {
   margin-top: 0;
   font-size: 26px;
-  color: #9C9D93;
+  color: #b20011;
   margin-bottom: 30px;
 }
 
@@ -1110,7 +1110,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #qbootstrap-testimonials .box-testimony a:hover, #qbootstrap-testimonials .box-testimony a:focus, #qbootstrap-testimonials .box-testimony a:active {
-  color: #9C9D93;
+  color: #b20011;
   text-decoration: none;
 }
 #qbootstrap-testimonials .box-testimony blockquote {
@@ -1146,7 +1146,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 56px;
   height: 56px;
   margin-top: -30px;
-  background: #9C9D93;
+  background: #b20011;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1181,7 +1181,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 0;
   font-size: 30px;
-  font-family: "Parisienne", cursive;
+  font-family: "Pinyon Script", cursive;
   font-style: italic;
 }
 #qbootstrap-testimonials .arrow-thumb {
@@ -1225,13 +1225,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .groom-men h3 {
-  font-family: "Parisienne", cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 28px;
 }
 
 .wedding-events {
   background: #fff;
-  box-shadow: rgba(250, 220, 224, 0.35) 0px 5px 15px;
 }
 @media screen and (max-width: 768px) {
   .wedding-events {
@@ -1247,7 +1246,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wedding-events .desc {
   padding: 2em;
-  border:  1px solid rgba(250, 220, 224, 0.55);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 0;
 }
@@ -1258,12 +1257,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 10px;
   right: 10px;
   content: '';
-  background: white;
+  background:  rgba(251,242,238, 0.5);
   z-index: -1;
 }
 .wedding-events .desc h3 {
-  font-size: 40px;
-  color: #5f2879;
+  font-size: 50px;
+  color: #b20011;
   display: block;
   margin-bottom: 40px;
 }
@@ -1290,7 +1289,7 @@ h1, h2, h3, h4, h5, h6 {
 .wedding-events .desc .icon i {
   color: #fff;
   padding: 15px;
-  background: #099D49;
+  background: #b20011;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1379,7 +1378,7 @@ h1, h2, h3, h4, h5, h6 {
 /* #qbootstrap-started .btn {
   height: 54px;
   border: none !important;
-  background: #9C9D93;
+  background: #b20011;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1488,7 +1487,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   height: 2px;
   width: 30px;
-  background: #9C9D93;
+  background: #b20011;
 }
 #qbootstrap-press .qbootstrap-press-item .qbootstrap-press-img {
   position: absolute;
@@ -1514,7 +1513,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after {
-  background: #9C9D93;
+  background: #b20011;
 }
 .qbootstrap-nav-toggle:hover, .qbootstrap-nav-toggle:focus, .qbootstrap-nav-toggle:active {
   outline: none;
@@ -1528,18 +1527,18 @@ h1, h2, h3, h4, h5, h6 {
   display: inline;
   width: 25px;
   height: 3px;
-  color: #9C9D93;
+  color: #b20011;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #9C9D93;
+  background: #b20011;
   transition: all .2s ease-out;
 }
 .qbootstrap-nav-toggle i::before, .qbootstrap-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #9C9D93;
+  background: #b20011;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1658,7 +1657,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8px;
 }
 .btn.btn-primary {
-  background:#5f2879;
+  background:#b20011;
   color: white;
   /* border: 1px solid black; */
  
@@ -1679,10 +1678,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
-  color: #5f2879;
+  color: #b20011;
 }
 .btn-default{
-  color: #5f2879;
+  color: #b20011;
 }
 
 .social {
@@ -1714,11 +1713,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none;
 }
 .social li a.social-box {
-  background: #9C9D93;
+  background: #b20011;
   color: #fff;
 }
 .social li a.social-circle {
-  background: #9C9D93;
+  background: #b20011;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1729,11 +1728,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #393e46 !important;
 }
 .social.social-box a {
-  background: #9C9D93;
+  background: #b20011;
   color: #fff;
 }
 .social.social-circle a {
-  background: #9C9D93;
+  background: #b20011;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1839,8 +1838,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   width: 2px;
-  background: rgb(223,70,93);
-  background: linear-gradient(100deg, rgba(223,70,93,1) 0%, rgba(246,128,55,1) 18%, rgba(248,216,86,1) 38%, rgba(9,157,73,1) 60%, rgba(66,131,207,1) 80%, rgba(203,108,230,1) 99%);
+  background: #b20011;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1869,8 +1867,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 12px;
   top: calc(65%);
   right: -6px;
-  background: inherit;
-  border: 2px solid inherit;
+  background: #b20011;
+  border: 2px solid #b20011;
   border-radius: 16px;
   z-index: 1;
 }
@@ -1886,7 +1884,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   top: calc(65% + 4px);
   right: 4px;
-  background:inherit;
+  background: #b20011;
   z-index: 1;
 }
 
@@ -1901,7 +1899,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: black;
+  color: #b20011;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -1956,7 +1954,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color: black;
+  color: #b20011;
   text-align: end;
   
 }
@@ -1965,7 +1963,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color: black;
+  color: #b20011;
   text-align: start;
   
 }
@@ -1974,7 +1972,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: black;
+  color: #b20011;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -1986,7 +1984,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: black;
+  color: #b20011;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -2000,7 +1998,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 10px);
   position: relative;
   font-size: 14px;
-  color: #5f2879;
+  color: #b20011;
   font-weight: 700;
 }
 .div-title-cena{
@@ -2008,7 +2006,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 35px);
   position: relative;
   font-size: 14px;
-  color: #5f2879;
+  color: #b20011;
   font-weight: 700;
 }
 
@@ -2017,7 +2015,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50%);
   position: relative;
   font-size: 14px;
-  color: #5f2879;
+  color: #b20011;
   font-weight: 700;
 }
 
@@ -2026,7 +2024,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 60px);
   position: relative;
   font-size: 14px;
-  color:#5f2879;
+  color:#b20011;
   font-weight: 700;
 }
 
@@ -2144,9 +2142,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .btn-outlined {
-  color: #5f2879;
+  color: #b20011;
   background-color: #fff;
-  border: 2px solid #5f2879;
+  border: 2px solid #b20011;
   border-radius: 100px; 
   cursor: pointer;
   display: inline-block;
