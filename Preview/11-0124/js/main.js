@@ -276,9 +276,9 @@
 		});
 	};
 	
-	const formatNumber = n => (n<10) ? ("0" + n).slice(-2) : n;
+	const formatNumber = n => n <10 ? ("0" + n).slice(-2) : n;
 	// Set the date we're counting down to
-		var countDownDate = new Date("Oct 26, 2024 16:00:00").getTime();
+		var countDownDate = new Date("August 10, 2024 4:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -288,7 +288,7 @@
 
 		// Find the distance between now an the count down date
 		var distance = countDownDate - now;
-			
+
 		// Time calculations for days, hours, minutes and seconds
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -337,8 +337,8 @@
 		}
 
 		
-		//let url = "https://docs.google.com/forms/d/e/1FAIpQLSeZgCf2FCmVJ12hgc-wZzjmYbYalw-6xiWNEOSwj67HvP5S7w/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
-		let url ="";
+		//let url = "https://docs.google.com/forms/d/e/1FAIpQLScWN4ZNkUfJRkB7tiiA7njhhHL_POOItqRjVqXzeROVEULlAg/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+		let url =""
 		fetch(url, { method: 'GET', 
 		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
 		redirect: "follow",
