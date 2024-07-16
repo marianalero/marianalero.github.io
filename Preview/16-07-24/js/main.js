@@ -253,8 +253,9 @@
 		});
 	};
 	
-	const formatNumber = n => ("0" + n).slice(-2);
+	const formatNumber = n => n<10 ? ("0" + n).slice(-2) : n;
 	// Set the date we're counting down to
+		console.log(new Date("Dec 28, 2024 19:00:00"))
 		var countDownDate = new Date("Dec 28, 2024 19:00:00").getTime();
 
 		// Update the count down every 1 second
