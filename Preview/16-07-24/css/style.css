@@ -2202,7 +2202,7 @@ input[type="radio"] {
   -webkit-appearance: radio;
 }
 
-#principal {
+/* #principal {
   background-image: url("../images/fondo\ plumas\ horizontal\ \(800\ x\ 1200\ px\).png");
   background-size: cover;
   position: relative;
@@ -2223,4 +2223,4 @@ input[type="radio"] {
     background-position-y: bottom;
     height: 35vh;
     background-position-x: -15%;
-}
+} */
