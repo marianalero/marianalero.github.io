@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  background-position-x: 60%!important;
+  background-position-x: 40%!important;
 }
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover .display-tc,
 .video-hero .display-tc {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .qbootstrap-cover .display-tc .holder,
 .video-hero .display-tc .holder {
