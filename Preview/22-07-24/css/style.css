@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  background-position-x: 40%!important;
+  background-position-x: 60%!important;
 }
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover .display-tc,
 .video-hero .display-tc {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .qbootstrap-cover .display-tc .holder,
 .video-hero .display-tc .holder {
@@ -2212,27 +2212,27 @@ input[type="radio"] {
   -webkit-appearance: radio;
 }
 
-/* @media only screen and (max-width: 600px) {
-  .img-enmedio
-  {
-    z-index: 0;
-    width: 100% !important;
-    background-size: cover;
-    position: relative;
-    background-repeat: repeat;
-    background-position-x: 50% !important;
-
-  }
-} 
-
-.img-enmedio
-{
-    z-index: 0;
-    width: 100% !important;
-    background-size: contain;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position-x: 50% !important;
-
-} */
-
+#days{
+  border: solid 1px white;
+  border-radius: 8px;
+  padding: 6px;
+  width: 55px!important;
+}
+#hours{
+  border: solid 1px white;
+  border-radius: 8px;
+  padding: 6px;
+  width: 55px!important;
+}
+#minutes{
+  border: solid 1px white;
+  border-radius: 8px;
+  padding: 6px;
+  width: 55px!important;
+}
+#seconds{
+  border: solid 1px white;
+  border-radius: 8px;
+  padding: 6px;
+  width: 55px!important;
+}
