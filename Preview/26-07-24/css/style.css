@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 .qbootstrap-cover, .video-hero {
-  background-size: contain;
+  background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   background-position-x: 50%;
