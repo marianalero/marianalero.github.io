@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-testimonials,
   #qbootstrap-testimonials-2,
   #qbootstrap-press {
-    padding: 5em 0;
+    padding: 3em 0;
   }
 
   #qbootstrap-countdown{
@@ -751,6 +751,12 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   #qbootstrap-countdown .section-heading h2 {
     font-size: 30px;
+  }
+  #qbootstrap-countdown .section-heading .datewed {
+    font-size: 26px;
+  }
+  #qbootstrap-countdown .countdown {
+    font-size: 24px;
   }
 }
 #qbootstrap-countdown .section-heading .datewed {
@@ -1258,7 +1264,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 10px;
   right: 10px;
   content: '';
-  background:  rgba(233,237,240,.5);
+  background:  rgba(248,248,244,.5);
   z-index: -1;
 }
 .wedding-events .desc h3 {
@@ -2251,6 +2257,7 @@ input[type="radio"] {
   animation: shine 2s ease-in-out 2 alternate-reverse 2s;
 }
 
-.btn-gold{
-  background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+.btn-silver{
+  background-image: linear-gradient(270deg, #8c8c8c 1.3%, #999 15%, #868686 29.6%, #828282 29.6%, #7d7d7d 31.8%, #797979 31.8%, #6a6a6a 38.9%, #d3d3d3)!important;
+
 }

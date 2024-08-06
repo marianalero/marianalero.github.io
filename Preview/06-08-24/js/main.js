@@ -334,32 +334,26 @@
 		var confirmText = "";
 		var selNumInv = number;
 		var radioValue = $("input[name='confirm']:checked").val();
+		var message= "Hola,";
 		if(radioValue == "confirm"){
 			confirmText = "Asistiré"
+			var numbertext;
+			if(parseInt(selNumInv) > 1){
+				numbertext=  selNumInv+' personas.'
+			}
+			else{
+				numbertext=  '1 personas.'
+			}
+			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Valeria%20y%20Tadeo%20para%20"+numbertext+" A nombre de "+name+", Teléfono:"+telefono;
+
 		}
 		else
 		{
 			confirmText = "No asistiré";
-			selNumInv =0;
+			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Valeria%20y%20Tadeo. Mi nombre es "+name;
 		}
 
-		// // /https://docs.google.com/forms/d/e/1FAIpQLSeG1_3rXwcGoL0yDzhVTaCU_09jJahIiAIH59PrQh0ZHxZYig/viewform?usp=pp_url&entry.516140191=sss&entry.827025270=222&entry.1599079301=as&entry.465259973=1
-		// let url = "https://docs.google.com/forms/d/e/1FAIpQLSeG1_3rXwcGoL0yDzhVTaCU_09jJahIiAIH59PrQh0ZHxZYig/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
-		// console.log(url);
-		// fetch(url, { method: 'GET', 
-		// mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
-		// redirect: "follow",
-		// referrer: "no-referrer",
-		// headers: {
-		//   'Content-Type': 'application/x-www-form-urlencoded',
-		// },
-		//  } )
-		// .then(res=> {
-		// 	console.log(res)
-		// 	var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
-		// 	confirmModal.show()
-		// })
-		// .catch(reason => console.log(reason));
+		window.open("https://wa.me/+526623379354/?text="+ message,"_blank");
 		
 	
 	}
