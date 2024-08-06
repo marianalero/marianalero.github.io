@@ -2141,7 +2141,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background-size: contain;
   position: relative;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position-x: 50%!important;
 }
 
@@ -2151,7 +2151,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 50vh;
     background-size: cover!important;
     position: relative!important;
-    background-repeat: no-repeat!important;
+    background-repeat: repeat!important;
     background-position-x: 50%!important;
   }
 
