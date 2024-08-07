@@ -353,7 +353,7 @@
 			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Valeria%20y%20Tadeo. Mi nombre es "+name;
 		}
 
-		window.open("https://wa.me/+52 6621465731/?text="+ message,"_blank");
+		window.open("https://wa.me/+526621465731/?text="+ message,"_blank");
 		
 	
 	}
