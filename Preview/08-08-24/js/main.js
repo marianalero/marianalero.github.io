@@ -5,17 +5,16 @@
 	location.search.slice(1).split("&").forEach(function(pair) {
 		pair = pair.split("=");
 		params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);});
-	console.log("se entro a la invitacion",params.number)
+		console.log("se entro a la invitacion",params.number)
 		var number =(params.number == undefined )?0:params.number
 		var pases = (number == 1) ? " pase" : " pases";
 	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
 	
-	// var dateDue = new Date("2024-09-01");
-	// var today = new Date();
 
-	// if(today> dateDue){
-	// 	$("#confirmar").hide()
-	// }
+	var type =(params.t == undefined )?0:params.t
+	if(type=1){
+		$("#qbootstrap-testimonials").hide()
+	}
 
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -29,25 +28,6 @@
 	    );
 	};
 
-	// let boton = document.querySelector(".reproductor")
-    // let audioEtiqueta = document.querySelector("audio")
-
-    // boton.addEventListener("click", () => {
-	// 	audioEtiqueta.setAttribute("src", "./audio/cancion3.mp3")
-	// 	var play = boton.classList.contains('play');
-	// 	if(play){
-	// 		boton.classList.add('pause')
-	// 		boton.classList.remove('play')
-	// 		audioEtiqueta.pause()
-	// 	}else{
-	// 		boton.classList.remove('pause')
-	// 		boton.classList.add('play')
-	// 		audioEtiqueta.play()
-	// 	}
-      
-      
-    //   console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-    // });
 
 	// Carousel Feature Slide
 	var testimonialCarousel = function(){
@@ -342,18 +322,18 @@
 				numbertext=  selNumInv+' personas.'
 			}
 			else{
-				numbertext=  '1 personas.'
+				numbertext=  '1 persona.'
 			}
-			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Valeria%20y%20Tadeo%20para%20"+numbertext+" A nombre de "+name+", Teléfono:"+telefono;
+			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Niyirma%20y%20Luis Alberto%20para%20"+numbertext+" A nombre de "+name+", Teléfono:"+telefono;
 
 		}
 		else
 		{
 			confirmText = "No asistiré";
-			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Valeria%20y%20Tadeo. Mi nombre es "+name;
+			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20boda%20de%20Niyirma%20y%20Luis Alberto. Mi nombre es "+name;
 		}
 
-		window.open("https://wa.me/+52 6621465731/?text="+ message,"_blank");
+		window.open("https://wa.me/+526231188091/?text="+ message,"_blank");
 		
 	
 	}
