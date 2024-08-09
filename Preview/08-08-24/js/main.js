@@ -12,7 +12,7 @@
 	
 
 	var type =(params.t == undefined )?0:params.t
-	if(type=1){
+	if(type==1){
 		$("#qbootstrap-testimonials").hide()
 	}
 
