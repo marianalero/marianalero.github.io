@@ -109,17 +109,17 @@
 	// Burger Menu
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-qbootstrap-nav-toggle', function(event){
+		// $('body').on('click', '.js-qbootstrap-nav-toggle', function(event){
 
-			if ( $('#navbar').is(':visible') ) {
-				$(this).removeClass('active');	
-			} else {
-				$(this).addClass('active');	
-			}
+		// 	if ( $('#navbar').is(':visible') ) {
+		// 		$(this).removeClass('active');	
+		// 	} else {
+		// 		$(this).addClass('active');	
+		// 	}
 
-			event.preventDefault();
+		// 	event.preventDefault();
 			
-		});
+		// });
 
 	};
 
