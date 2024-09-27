@@ -185,15 +185,14 @@
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
 		var name = document.getElementById("name").value
-		var telefono = document.getElementById("telefono").value
+		var accompanying = document.getElementById("telefono").value
 		var number = document.getElementById("numInv").innerHTML;
 		number = number.substring(30,32);
 		// number = number.slice(-6);
-		var confirmText = "";
+		var message = "Hola, ";
 		var selNumInv = number;
 		var radioValue = $("input[name='confirm']:checked").val();
 		if(radioValue == "confirm"){
-			confirmText = "Asistiré"
 			var numbertext;
 			if(parseInt(selNumInv) > 1){
 				numbertext=  selNumInv+' personas.'
@@ -201,12 +200,12 @@
 			else{
 				numbertext=  '1 persona.'
 			}
-			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Mario Arturo%20para%20"+numbertext+". A nombre de "+name+", Teléfono:"+telefono;
+			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Mario Arturo. A nombre de "+name+", Número de acompañantes:"+accompanying;
 
 		}
 		else
 		{
-			confirmText = "No asistiré";
+			
 			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%20Mario Arturo. Mi nombre es "+name;
 		}
 
