@@ -343,23 +343,23 @@
 			selNumInv =0;
 		}
 
-		//https://docs.google.com/forms/d/e/1FAIpQLSfCvpbT2QsZEhVbUcPu2DcuS0wh6TkDuPh61WfRg9uJkaWa5g/viewform?usp=pp_url&entry.516140191=n&entry.827025270=t&entry.1599079301=c&entry.465259973=1
-	 	// let url = "https://docs.google.com/forms/d/e/1FAIpQLSfCvpbT2QsZEhVbUcPu2DcuS0wh6TkDuPh61WfRg9uJkaWa5g/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
-		// console.log(url);
-		// fetch(url, { method: 'GET', 
-		// mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
-		// redirect: "follow",
-		// referrer: "no-referrer",
-		// headers: {
-		//   'Content-Type': 'application/x-www-form-urlencoded',
-		// },
-		//  } )
-		// .then(res=> {
-		// 	console.log(res)
-		// 	var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
-		// 	confirmModal.show()
-		// })
-		// .catch(reason => console.log(reason));
+		//https://docs.google.com/forms/d/e/1FAIpQLSfOXS6266IS8IL6lwpHbGYDuZcjZ6-aheJRCIMSF96zyqiz8g/viewform?usp=pp_url&entry.516140191=aaaa&entry.827025270=222&entry.1599079301=s&entry.465259973=0
+	 	let url = "https://docs.google.com/forms/d/e/1FAIpQLSfOXS6266IS8IL6lwpHbGYDuZcjZ6-aheJRCIMSF96zyqiz8g/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+		console.log(url);
+		fetch(url, { method: 'GET', 
+		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
+		redirect: "follow",
+		referrer: "no-referrer",
+		headers: {
+		  'Content-Type': 'application/x-www-form-urlencoded',
+		},
+		 } )
+		.then(res=> {
+			console.log(res)
+			var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
+			confirmModal.show()
+		})
+		.catch(reason => console.log(reason));
 		
 	
 	}
@@ -403,6 +403,14 @@
 		inlineSVG();
 		bgVideo();
 
+		var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+		myModal.show()
+		
+		$("#btnEntrar").click(function(){
+			myModal.hide()
+			let btn2 = document.querySelector(".btn-flotante")
+			btn2.click();
+		});
 		$('#asistire').prop('checked',true);
 	});
 
