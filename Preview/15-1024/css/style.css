@@ -23,7 +23,7 @@ body {
   font-size: 18px;
   line-height: 1.8;
   color: black;
-  background: white;
+  background: rgba(247,235,223,.2);
   height: 100%;
   position: relative;
   
@@ -1105,7 +1105,6 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-testimonials .box-testimony {
   margin-bottom: 2em;
   float: left;
-  background-color: white;
   padding: 15px;
   width: 100%;
 }
@@ -1231,7 +1230,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wedding-events {
-  background: #fff;
+  background: rgba(247,235,223,.2);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 768px) {
@@ -1259,7 +1258,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 10px;
   right: 10px;
   content: '';
-  background: rgba(247,235,223,.2);
+  background-color: rgb(215,153,156,.3);
   z-index: -1;
 }
 .wedding-events .desc h3 {
