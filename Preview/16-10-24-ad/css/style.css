@@ -2230,10 +2230,10 @@ background: -o-linear-gradient(transparent, transparent);
 }
 
 #padrinos {
-  background-image: url("../images/Sin\ título\ \(2000\ x\ 900\ px\).png");
+  background-image: url("../images/fondo\ padres\ -\ copia.png");
 
   width: 100vw;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   padding-top: 10vh;
@@ -2242,7 +2242,7 @@ background: -o-linear-gradient(transparent, transparent);
 @media (max-width: 767.98px) {
   #padrinos{
     background-size: contain;
-    background-image: url("../images/Diseño\ sin\ título.png");
+    background-image: url("../images/padrinos.png");
   }
 }
 
