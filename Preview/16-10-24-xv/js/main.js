@@ -1,14 +1,7 @@
 ;(function () {
 	
 	'use strict';
-	var params = {};
-	location.search.slice(1).split("&").forEach(function(pair) {
-		pair = pair.split("=");
-		params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);});
-	console.log("se entro a la invitacion",params.number)
-		var number =(params.number == undefined )?0:params.number
-		var pases = (number == 1) ? " pase" : " pases";
-	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
+	
 	
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -293,15 +286,14 @@
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
 		var name = document.getElementById("name").value
-		var number = document.getElementById("numInv").innerHTML;
-		number = number.substring(30,32);
+		var number = 2;
 		// number = number.slice(-6);
 		var confirmText = "";
 		var selNumInv = number;
 		var radioValue = $("input[name='confirm']:checked").val();
 		var message= "Hola,";
 		if(radioValue == "confirm"){
-			var numbertext = parseInt(selNumInv) > 1 ? selNumInv+' personas.' : '1 persona'
+			var numbertext = parseInt(selNumInv) > 1 ? selNumInv+' personas' : '1 persona'
 			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Victoria%20Elizabeth%20para%20"+numbertext+". A nombre de "+name;
 		}
 		else
