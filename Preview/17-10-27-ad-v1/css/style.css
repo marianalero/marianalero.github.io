@@ -86,7 +86,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   color: #000;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Great Vibes", cursive;
   font-weight: 500;
 }
 
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 34px;
   padding-left: 0;
   color: #fff;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Great Vibes", cursive;
 }
 #qbootstrap-header.navbar-fixed-top {
   position: fixed !important;
@@ -364,7 +364,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover,
 .qbootstrap-hero {
   position: relative;
-
+  
   width: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -670,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-couple h3 {
   font-size: 34px;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Great Vibes", cursive;
   color: #414141 ;
 }
 @media screen and (max-width: 768px) {
@@ -719,7 +719,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0 !important;
 }
 #qbootstrap-countdown .section-heading h2 {
-  color: #530f18 ;
+  color: #000139 ;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-countdown .section-heading h2 {
@@ -728,8 +728,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-countdown .section-heading .datewed {
   font-size: 26px;
-  color: #530f18;
-  font-family: 'Pinyon Script';
+  color: #000139;
+  font-family: 'Great Vibes';
 }
 #qbootstrap-countdown .section-heading.svg-sm .svg {
   height: 180px;
@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-countdown .countdown {
   margin-bottom: 0;
   font-size: 30px;
-  color: #530f18;
+  color: #000139;
 }
 #qbootstrap-countdown .countdown span {
   margin: 0 0;
@@ -1167,7 +1167,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 0;
   font-size: 30px;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Great Vibes", cursive;
   font-style: italic;
 }
 #qbootstrap-testimonials .arrow-thumb {
@@ -1211,7 +1211,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .groom-men h3 {
-  font-family: "Pinyon Script", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 28px;
 }
 
@@ -1839,7 +1839,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   width: 2px;
-  background: #530f18 ;
+  background: #000139 ;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1868,8 +1868,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 12px;
   top: calc(65%);
   right: -6px;
-  background: #530f18 ;
-  border: 2px solid #530f18 ;
+  background: #000139 ;
+  border: 2px solid #000139 ;
   border-radius: 16px;
   z-index: 1;
 }
@@ -1885,7 +1885,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   top: calc(65% + 4px);
   right: 4px;
-  background: #530f18 ;
+  background: #000139 ;
   z-index: 1;
 }
 
@@ -1900,7 +1900,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #530f18 ;
+  color: #000139 ;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -1955,7 +1955,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color: #530f18 ;
+  color: #000139 ;
   text-align: end;
   
 }
@@ -1964,7 +1964,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color: #530f18 ;
+  color: #000139 ;
   text-align: start;
   
 }
@@ -1973,7 +1973,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #530f18 ;
+  color: #000139 ;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -1985,7 +1985,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #530f18 ;
+  color: #000139 ;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -1999,7 +1999,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 10px);
   position: relative;
   font-size: 14px;
-  color: #530f18 ;
+  color: #000139 ;
   font-weight: 700;
 }
 .div-title-cena{
@@ -2007,7 +2007,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 35px);
   position: relative;
   font-size: 14px;
-  color: #530f18 ;
+  color: #000139 ;
   font-weight: 700;
 }
 
@@ -2016,7 +2016,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50%);
   position: relative;
   font-size: 14px;
-  color: #530f18 ;
+  color: #000139 ;
   font-weight: 700;
 }
 
@@ -2025,7 +2025,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 60px);
   position: relative;
   font-size: 14px;
-  color:#530f18 ;
+  color:#000139 ;
   font-weight: 700;
 }
 
@@ -2071,12 +2071,12 @@ h1, h2, h3, h4, h5, h6 {
   {
     /* left: calc(100% + 6px);  */
     width: 35px;
-    border-color: transparent #530f18 transparent transparent;
+    border-color: transparent #000139 transparent transparent;
   }
   .intinerario-container.intinerario-left::before{
     /* right: calc(50% + 10px); */
     width: 35px;
-    border-color: transparent #530f18 transparent transparent;
+    border-color: transparent #000139 transparent transparent;
   }
 
   .intinerario-container.intinerario-left .intinerario-date,
@@ -2108,7 +2108,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px 0;
     /* font-size:20px ; */
     font-weight: normal;
-    color: #530f18;
+    color: #000139;
     text-align: center;
     
   }
@@ -2116,7 +2116,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px 0;
     /* font-size: 20px; */
     font-weight: normal;
-    color: #530f18;
+    color: #000139;
     text-align: center;
     
   }
