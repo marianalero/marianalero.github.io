@@ -1,22 +1,8 @@
 ;(function () {
 	
 	'use strict';
-	var params = {};
-	location.search.slice(1).split("&").forEach(function(pair) {
-		pair = pair.split("=");
-		params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);});
-	console.log("se entro a la invitacion",params.number)
-		var number =(params.number == undefined )?0:params.number
-		var pases = (number == 1) ? " pase" : " pases";
-	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
 	
-	// var dateDue = new Date("2024-09-01");
-	// var today = new Date();
-
-	// if(today> dateDue){
-	// 	$("#confirmar").hide()
-	// }
-
+	
 	// iPad and iPod detection	
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
@@ -109,17 +95,17 @@
 	// Burger Menu
 	var burgerMenu = function() {
 
-		// $('body').on('click', '.js-qbootstrap-nav-toggle', function(event){
+		$('body').on('click', '.js-qbootstrap-nav-toggle', function(event){
 
-		// 	if ( $('#navbar').is(':visible') ) {
-		// 		$(this).removeClass('active');	
-		// 	} else {
-		// 		$(this).addClass('active');	
-		// 	}
+			if ( $('#navbar').is(':visible') ) {
+				$(this).removeClass('active');	
+			} else {
+				$(this).addClass('active');	
+			}
 
-		// 	event.preventDefault();
+			event.preventDefault();
 			
-		// });
+		});
 
 	};
 
@@ -131,26 +117,6 @@
 		}
 	};
 
-
-
-	// Page Nav
-	var clickMenu = function() {
-
-		$('a:not([class="external"])').click(function(event){
-			var section = $(this).data('nav-section'),
-				navbar = $('#navbar');
-		    
-		    if ( navbar.is(':visible')) {
-		    	navbar.removeClass('in');
-		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-qbootstrap-nav-toggle').removeClass('active');
-		    }
-
-		    event.preventDefault();
-		    return false;
-		});
-
-	};
 
 	// Reflect scrolling in navigation
 	var navActive = function(section) {
@@ -280,9 +246,9 @@
 		});
 	};
 	
-	const formatNumber = n => (n<10) ? ("0" + n).slice(-2) : n;
+	const formatNumber = n => ("0" + n).slice(-2);
 	// Set the date we're counting down to
-		var countDownDate = new Date("March 08, 2025 00:00:00").getTime();
+		var countDownDate = new Date("December 07, 2024 18:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -292,7 +258,7 @@
 
 		// Find the distance between now an the count down date
 		var distance = countDownDate - now;
-			
+
 		// Time calculations for days, hours, minutes and seconds
 		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -309,11 +275,7 @@
 		document.getElementById("minutes").innerHTML = formatNumber(minutes) + "<br/> <span style='font-size: 16px;'>Mins</span>";
 		document.getElementById("seconds").innerHTML = formatNumber(seconds) + "<br/> <span style='font-size: 16px;'>Segs</span>";
 
-		// If the count down is finished, write some text 
-		if (distance < 0) {
-		 clearInterval(x);
-		 document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";
-		}
+	
 		}, 1000);	
 	
 		
@@ -324,49 +286,59 @@
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
 		var name = document.getElementById("name").value
-		var telefono = document.getElementById("telefono").value
-		var number = document.getElementById("numInv").innerHTML;
-		number = number.substring(30,32);
+		var number = 2;
 		// number = number.slice(-6);
 		var confirmText = "";
 		var selNumInv = number;
 		var radioValue = $("input[name='confirm']:checked").val();
-		if(radioValue == "confirm"){
-			confirmText = "Asistiré"
-		}
-		else
-		{
-			confirmText = "No asistiré";
-			selNumInv =0;
-		}
-		// //https://docs.google.com/forms/d/e/1FAIpQLScaQvy8raY7qipxend2dAeyJwXw0SpLqSu5eL1Te8f22vG_Zg/viewform?usp=pp_url&entry.516140191=mariana&entry.827025270=44444&entry.1599079301=si&entry.465259973=4https://docs.google.com/forms/d/e/1FAIpQLSfCvpbT2QsZEhVbUcPu2DcuS0wh6TkDuPh61WfRg9uJkaWa5g/viewform?usp=pp_url&entry.516140191=n&entry.827025270=t&entry.1599079301=c&entry.465259973=1
-	 	// let url = "https://docs.google.com/forms/d/e/1FAIpQLScaQvy8raY7qipxend2dAeyJwXw0SpLqSu5eL1Te8f22vG_Zg/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
-		// console.log(url);
-		// fetch(url, { method: 'GET', 
-		// mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
-		// redirect: "follow",
-		// referrer: "no-referrer",
-		// headers: {
-		//   'Content-Type': 'application/x-www-form-urlencoded',
-		// },
-		//  } )
-		// .then(res=> {
-		// 	console.log(res)
-		// 	var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
-		// 	confirmModal.show()
-		// })
-		// .catch(reason => console.log(reason));
+		var message= "Hola,";
+		// if(radioValue == "confirm"){
+		// 	var numbertext = parseInt(selNumInv) > 1 ? selNumInv+' personas' : '1 persona'
+		// 	message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Victoria%20Elizabeth%20para%20"+numbertext+". A nombre de "+name;
+		// }
+		// else
+		// {
+		// 	message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%Victoria%20Elizabeth. Mi nombre es "+name;
+			
+		// }
+
+		// window.open("https://wa.me/+526622232078/?text="+ message,"_blank");
 		
 	
 	}
 
+	// let boton = document.querySelector(".btn-flotante")
+    // let audioEtiqueta = document.querySelector("audio")
+
+    // boton.addEventListener("click", () => {
+	// 	audioEtiqueta.setAttribute("src", "./audio/cancion.mp3")
+	// 	var play = boton.classList.contains('play');
+	// 	let icon = document.getElementById("btn-flotante-icon")
+	// 	if(play){
+	// 		icon.classList.remove('icon-pause')
+	// 		icon.classList.add('icon-play')
+	// 		boton.classList.add('pause')
+	// 		boton.classList.remove('play')
+	// 		audioEtiqueta.pause()
+	// 	}else{
+	// 		icon.classList.add('icon-pause')
+	// 		icon.classList.remove('icon-play')
+	// 		boton.classList.remove('pause')
+	// 		boton.classList.add('play')
+	// 		audioEtiqueta.play()
+	// 	}
+      
+      
+    //   console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+    // });
+
 	// Document on load.
 	$(function(){
-
+		
 		burgerMenu();
 		testimonialCarousel();
 		sliderMain();
-		clickMenu();
+	
 		parallax();
 		// windowScroll();
 		navigationSection();
@@ -374,10 +346,19 @@
 		inlineSVG();
 		bgVideo();
 
+
 		$('#asistire').prop('checked',true);
-			
+	
+		var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+		myModal.show()
 		
+		$("#btnEntrar").click(function(){
+			myModal.hide()
+			// let btn = document.querySelector(".btn-flotante")
+			// btn.click();
+		});
 	});
 
+	
 
 }());

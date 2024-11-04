@@ -5,7 +5,10 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Bell MT Std';
+  src: url(../fonts/bell-mt-std-italic-maisfontes.5848/bell-mt-std-italic.otf);
+}
 
 /* =======================================================
 *
@@ -18,7 +21,7 @@ html{
   overflow-x: hidden;
 }
 body {
-  font-family:"PT Serif Caption", sans-serif;
+  font-family: 'PT Serif', serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.8;
@@ -28,27 +31,21 @@ body {
   position: relative;
   text-transform: uppercase;
 }
-.icon-calendar{
-  color: #081534 ;
-}
-.icon-clock2{
-  color: #081534 ;
-}
+
 a {
-  color: #081534 ;
+  color: #cc142a;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #081534 ;
+  color: #cc142a;
   outline: none;
 }
 
 p {
   margin-bottom: .5em;
  color: black;
-
   
 }
 .row{
@@ -70,23 +67,23 @@ p {
   color: white;
 }
 .texto{
-  font-size: 14px;
+  font-size: 16px;
   color:#000;
-
+  text-transform: initial;
   margin-top: 10px;
   margin-bottom: 10px;
- 
+  text-transform: uppercase;
 }
 
 .texto-blanco{
   font-size: 18px;
   color:white;
-
+  text-transform: initial;
   margin-top: 10px;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #081534;
-  font-family: "Parisienne",  cursive;
+  color: #cc142a;
+  font-family: "Great Vibes", cursive;
   font-weight: 400;
   text-transform: none;
 }
@@ -124,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   }
   #qbootstrap-header .navbar-brand {
-    color: #c97946 !important;
+    color: #cc142a !important;
   }
   #qbootstrap-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
@@ -133,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
   }
   #qbootstrap-header #navbar li a:hover {
-    color: #c97946 !important;
+    color: #cc142a !important;
   }
   #qbootstrap-header #navbar li a span:before {
     background: transparent !important;
@@ -141,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   #qbootstrap-header #navbar li.active a {
     background: transparent;
     background: none;
-    color: #c97946 !important;
+    color: #cc142a !important;
   }
   #qbootstrap-header #navbar li.active a span:before {
     visibility: visible;
@@ -170,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #c97946;
+  background-color: #cc142a;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -210,7 +207,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 34px;
   padding-left: 0;
   color: #fff;
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
 }
 #qbootstrap-header.navbar-fixed-top {
   position: fixed !important;
@@ -223,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 #qbootstrap-header.navbar-fixed-top .navbar-brand {
-  color: #c97946;
+  color: #cc142a;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
@@ -232,12 +229,12 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li a:hover {
-  color: #c97946;
+  color: #cc142a;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
-  color: #c97946;
+  color: #cc142a;
 }
 #qbootstrap-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
@@ -266,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #adadad;
 }
 #qbootstrap-header .navbar-default .brand-slogan em {
-  color: #c97946;
+  color: #cc142a;
   font-style: normal;
 }
 #qbootstrap-header a {
@@ -293,11 +290,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 .section-heading.colored .svg {
-  fill: #c97946;
+  fill: #cc142a;
 }
 .section-heading h2 {
   font-size: 60px;
-  color: #c97946;
+  color: #cc142a;
   display: block;
   padding-bottom: 20px;
   line-height: 1.5;
@@ -311,8 +308,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   line-height: 1.8;
   color: black;
-  text-transform: none;
-  
+  text-transform: uppercase;
+  font-family: 'PT Serif Caption', serif;
   font-size: 16px !important;
 }
 @media screen and (max-width: 768px) {
@@ -389,19 +386,13 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   background: rgba(0, 0, 0, 0.4);
 }
-@media screen and (max-width: 768px){
-  .qbootstrap-cover, .video-hero {
-      background-size: cover!important;
-      position: relative!important;
-      background-repeat: no-repeat!important;
-      background-position-x: 90%!important
-}
-}
-.qbootstrap-cover, .video-hero {
+
+.qbootstrap-cover,
+.video-hero {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  background-position-x: 50%;
+  background-position-x: 60%!important;
 }
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
@@ -437,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 .qbootstrap-cover .display-tc .holder,
 .video-hero .display-tc .holder {
   color: #fff;
-  font-family: 'PT Serif Caption', serif;;
+  font-family: 'Made Avenue PERSONAL USE', serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -494,7 +485,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80px;
   margin-bottom: 20px;
   font-weight: 300 !important;
-  font-family: 'Parisienne', cursive;
 }
 .qbootstrap-cover .display-tc h2 strong,
 .video-hero .display-tc h2 strong {
@@ -566,7 +556,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-slider-hero .flexslider .flex-control-nav li a.flex-active {
   cursor: pointer;
-  background: #c97946;
+  background: #cc142a;
 }
 #qbootstrap-slider-hero .flexslider .flex-direction-nav {
   display: none;
@@ -603,7 +593,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-size: 18px;
-  text-transform: none;
+  text-transform: uppercase;
   letter-spacing: 10px;
   font-weight: 400;
 }
@@ -671,7 +661,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
 }
 #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-  background: #c97946 !important;
+  background: #cc142a !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -686,8 +676,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-couple h3 {
   font-size: 34px;
-  font-family: "Parisienne", cursive;
-  color: #c97946;
+  font-family: "Great Vibes", cursive;
+  color: #cc142a;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple h3 {
@@ -695,9 +685,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #qbootstrap-couple span {
-  color: #c97946;
+  color: #cc142a;
   letter-spacing: 10px;
-  text-transform: none;
+  text-transform: uppercase;
   font-size: 14px;
   border: 1px solid rgba(255, 132, 124, 0.3);
   padding: 2px 5px;
@@ -705,7 +695,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-couple .amp-center {
   font-size: 60px;
   margin-top: 100%;
-  color: #c97946;
+  color: #cc142a;
 }
 @media screen and (max-width: 768px) {
   #qbootstrap-couple .amp-center {
@@ -713,7 +703,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #qbootstrap-couple .amp-center .colored .svg {
-  fill: #c97946;
+  fill: #cc142a;
 }
 
 .qbootstrap-bg {
@@ -726,10 +716,10 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 0;
   width: 100%;
-  background-size: cover;
+  background-size: contain;
   position: relative;
-  background-repeat: repeat;
-  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 50%!important;;
   text-align: center;
   height: 100vh;
 }
@@ -739,7 +729,6 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-repeat: repeat;
    height: 50vh;
-   background-position-x: 40%!important;
   }
 }
 #qbootstrap-countdown .section-heading {
@@ -756,7 +745,7 @@ h1, h2, h3, h4, h5, h6 {
 #qbootstrap-countdown .section-heading .datewed {
   font-size: 30px;
   color: white;
-  font-family: 'DM Serif Display','serif';
+  font-family: 'Great Vibes';
 }
 #qbootstrap-countdown .section-heading.svg-sm .svg {
   height: 180px;
@@ -778,18 +767,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-countdown .countdown {
   margin-bottom: 0;
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
 }
 #qbootstrap-countdown .countdown span {
   margin: 0 0;
   display: inline-block;
-  font-family: 'PT Serif Caption', serif;;
+  font-family: 'Made Avenue PERSONAL USE', serif;
 }
 #qbootstrap-countdown .countdown small {
   display: block;
   font-size: 14px;
-  font-family: 'PT Serif Caption', serif;;
+  font-family: 'Made Avenue PERSONAL USE', serif;
   letter-spacing: 10px;
   text-transform: uppercase;
 }
@@ -845,7 +834,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 .couple .desc h2 {
-  color: #c97946;
+  color: #cc142a;
   font-size: 40px;
   margin-bottom: 30px;
 }
@@ -998,7 +987,7 @@ h1, h2, h3, h4, h5, h6 {
 .timeline-title {
   margin-top: 0;
   font-size: 26px;
-  color: #c97946;
+  color: #cc142a;
   margin-bottom: 30px;
 }
 
@@ -1006,7 +995,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin-bottom: 20px;
   font-size: 13px;
-  text-transform: none;
+  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
@@ -1111,7 +1100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #qbootstrap-testimonials .box-testimony a:hover, #qbootstrap-testimonials .box-testimony a:focus, #qbootstrap-testimonials .box-testimony a:active {
-  color: #c97946;
+  color: #cc142a;
   text-decoration: none;
 }
 #qbootstrap-testimonials .box-testimony blockquote {
@@ -1147,7 +1136,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 56px;
   height: 56px;
   margin-top: -30px;
-  background: #c97946;
+  background: #cc142a;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1182,7 +1171,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 0;
   font-size: 30px;
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
   font-style: italic;
 }
 #qbootstrap-testimonials .arrow-thumb {
@@ -1226,13 +1215,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .groom-men h3 {
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 28px;
 }
 
 .wedding-events {
   background: #fff;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 768px) {
   .wedding-events {
@@ -1259,14 +1247,14 @@ h1, h2, h3, h4, h5, h6 {
   left: 10px;
   right: 10px;
   content: '';
-  background: white;
+  background: rgba(247, 221, 217, 0.2);
   z-index: -1;
 }
 .wedding-events .desc h3 {
-  font-size: 35px;
-  color: #081534;
+  font-size: 40px;
+  color: #cc142a;
   display: block;
-  font-family: 'PT Serif Caption"',serif;
+  
 }
 .wedding-events .desc .date {
   display: block;
@@ -1291,7 +1279,7 @@ h1, h2, h3, h4, h5, h6 {
 .wedding-events .desc .icon i {
   color: #fff;
   padding: 15px;
-  background: #906989;
+  background: #cc142a;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1350,22 +1338,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-started .form-control {
   background: rgba(255, 255, 255, 0.2);
+  /* border: none !important; */
+  /* border-color: #f29dab; */
+  color: #fff;
   font-size: 16px !important;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-
+#qbootstrap-started .form-control::-webkit-input-placeholder {
+  color: #f29dab;
+}
+#qbootstrap-started .form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #f29dab;
+}
+#qbootstrap-started .form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #f29dab;
+}
+#qbootstrap-started .form-control:-ms-input-placeholder {
+  color: #f29dab;
+}
 #qbootstrap-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
 }
 /* #qbootstrap-started .btn {
   height: 54px;
   border: none !important;
-  background: #c97946;
+  background: #cc142a;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1474,7 +1478,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   height: 2px;
   width: 30px;
-  background: #c97946;
+  background: #cc142a;
 }
 #qbootstrap-press .qbootstrap-press-item .qbootstrap-press-img {
   position: absolute;
@@ -1500,7 +1504,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .qbootstrap-nav-toggle.active i::before, .qbootstrap-nav-toggle.active i::after {
-  background: #c97946;
+  background: #cc142a;
 }
 .qbootstrap-nav-toggle:hover, .qbootstrap-nav-toggle:focus, .qbootstrap-nav-toggle:active {
   outline: none;
@@ -1514,18 +1518,18 @@ h1, h2, h3, h4, h5, h6 {
   display: inline;
   width: 25px;
   height: 3px;
-  color: #c97946;
+  color: #cc142a;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #c97946;
+  background: #cc142a;
   transition: all .2s ease-out;
 }
 .qbootstrap-nav-toggle i::before, .qbootstrap-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 3px;
-  background: #c97946;
+  background: #cc142a;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1626,7 +1630,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
   /* border-radius: 100px; */
-  border-radius: 100px;
+  
   cursor: pointer;
   display: inline-block;
   padding: 7px 20px;
@@ -1642,24 +1646,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-top: 8px;
-  text-transform: none;
 }
 .btn.btn-primary {
-  background:#e5a5a6;
+  background:#f29dab;
   color: white;
   /* border: 1px solid black; */
  
-}
-
-.btn.btn-pinck {
-  background:#2f3e55;
-  color: white;
-  /* border: 1px solid black; */
- 
-}
-.btn.btn-orange{
-  background-color: #e5a5a6;
-  color: white;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
@@ -1676,17 +1668,7 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
-  color: white;
-  border: white solid 1px!important;
-}
-.btn-default{
-  background-color: #906989;
-  color: white;
-  border-radius: 16px;
-  width: 100%;
-}
-.btn.btn-block{
-  width: 100%;
+  border-color: transparent;
 }
 
 .social {
@@ -1718,11 +1700,11 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none;
 }
 .social li a.social-box {
-  background: #c97946;
+  background: #cc142a;
   color: #fff;
 }
 .social li a.social-circle {
-  background: #c97946;
+  background: #cc142a;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1733,11 +1715,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #393e46 !important;
 }
 .social.social-box a {
-  background: #c97946;
+  background: #cc142a;
   color: #fff;
 }
 .social.social-circle a {
-  background: #c97946;
+  background: #cc142a;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1796,7 +1778,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #AB504F;
+  border-color: #cc142a;
 }
 
 .js .animate-box {
@@ -1843,7 +1825,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   width: 2px;
-  background: #2f3e55;
+  background: #cc142a;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1872,8 +1854,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 12px;
   top: calc(65%);
   right: -6px;
-  background: #2f3e55;
-  border: 2px solid #2f3e55;
+  background: #cc142a;
+  border: 2px solid #cc142a;
   border-radius: 16px;
   z-index: 1;
 }
@@ -1889,7 +1871,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   top: calc(65% + 4px);
   right: 4px;
-  background: #2f3e55;
+  background: #cc142a;
   z-index: 1;
 }
 
@@ -1904,7 +1886,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #2f3e55;
+  color: #cc142a;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -1959,7 +1941,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color:#2f3e55;
+  color: #cc142a;
   text-align: end;
   
 }
@@ -1968,7 +1950,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color:#2f3e55;
+  color: #cc142a;
   text-align: start;
   
 }
@@ -1977,7 +1959,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #2f3e55;
+  color: #cc142a;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -1989,7 +1971,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #2f3e55;
+  color: #cc142a;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -2003,7 +1985,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 10px);
   position: relative;
   font-size: 14px;
-  color: black;
+  color: #cc142a;
   font-weight: 700;
 }
 .div-title-cena{
@@ -2011,7 +1993,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 35px);
   position: relative;
   font-size: 14px;
-  color: black;
+  color: #cc142a;
   font-weight: 700;
 }
 
@@ -2020,7 +2002,7 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50%);
   position: relative;
   font-size: 14px;
-  color: #081534;
+  color: #cc142a;
   font-weight: 700;
 }
 
@@ -2029,11 +2011,20 @@ h1, h2, h3, h4, h5, h6 {
   left: calc(50% - 60px);
   position: relative;
   font-size: 14px;
-  color:#081534;
+  color:#cc142a;
   font-weight: 700;
 }
 
+ #gracias{
+  font-size: 25px;
+  font-family: 'Bell MT Std';
+ }
+@media (min-width: 200px) and (max-width: 350px) {
 
+  #gracias{
+    font-size: 18px;
+  }
+}
 
 
 
@@ -2066,12 +2057,12 @@ h1, h2, h3, h4, h5, h6 {
   {
     /* left: calc(100% + 6px);  */
     width: 35px;
-    border-color: transparent #2f3e55 transparent transparent;
+    border-color: transparent black transparent transparent;
   }
   .intinerario-container.intinerario-left::before{
     /* right: calc(50% + 10px); */
     width: 35px;
-    border-color: transparent #2f3e55  transparent transparent;
+    border-color: transparent black transparent transparent;
   }
 
   .intinerario-container.intinerario-left .intinerario-date,
@@ -2103,7 +2094,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px 0;
     /* font-size:20px ; */
     font-weight: normal;
-    color: #2f3e55;
+    color: black;
     text-align: center;
     
   }
@@ -2111,7 +2102,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px 0;
     /* font-size: 20px; */
     font-weight: normal;
-    color: #2f3e55;
+    color: black;
     text-align: center;
     
   }
@@ -2134,38 +2125,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-enmedio{
   height: 100vh;
-  background-size: contain;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position-x: 50%!important;
+ 
 }
 
 @media (max-width: 767.98px) {
   .img-enmedio
   {
     height: 50vh;
-    background-size: cover!important;
-    position: relative!important;
-    background-repeat: repeat!important;
-    background-position-x: 50%!important;
   }
 
 }
-.img-enmedio .overlay {
-  position: absolute !important;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  background: rgba(0, 0, 0, 0.4);
-}
+
 
 .btn-outlined {
-  color: #ad7b56;
+  color: #cc142a;
   background-color: #fff;
-  border: 2px solid #ad7b56;
+  border: 2px solid #cc142a;
   border-radius: 100px; 
   cursor: pointer;
   display: inline-block;
@@ -2183,20 +2158,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 8px;
 }
 /*# sourceMappingURL=style.css.map */
-input[type="radio"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal;
-  -webkit-appearance: radio;
-}
-
 .btn-flotante {
 	font-size: 16px; /* Cambiar el tamaño de la tipografia */
 	text-transform: uppercase; /* Texto en mayusculas */
 	font-weight: bold; /* Fuente en negrita o bold */
 	color: #ffffff; /* Color del texto */
 	border-radius: 50%; /* Borde del boton */
-	background-color: #081534 ; /* Color de fondo */
+	background-color: #cc142a; /* Color de fondo */
 	
 	position: fixed;
 	bottom: 40px;
@@ -2212,6 +2180,7 @@ input[type="radio"] {
     text-decoration: none;
 }
 .btn-flotante:hover {
+	background-color: #adadad; /* Color de fondo al pasar el cursor */
 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 	transform: translateY(-7px);
   text-decoration: none;
@@ -2229,3 +2198,24 @@ input[type="radio"] {
 		right: 20px;
 	}
 } 
+
+
+#principal {
+  background-image: url("../images/fondo\ plumas\ horizontal.png");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  padding-top: 10vh;
+}
+
+@media (max-width: 767.98px) {
+  #principal{
+    background-image: url("../images/fondorosa\ vertcial.png");
+  }
+}
+
+.padrinos{
+  color: black;  font-family: 'PT Serif', serif;font-style: italic;font-size: 18px;
+}
