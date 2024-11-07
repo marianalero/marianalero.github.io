@@ -1,7 +1,13 @@
 ;(function () {
 	
 	'use strict';
-	
+	var params = {};
+	location.search.slice(1).split("&").forEach(function(pair) {
+		pair = pair.split("=");
+		params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);});
+		var number =(params.number == undefined )?0:params.number
+		var pases = (number == 1) ? " pase" : " pases";
+	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
 	
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -286,51 +292,51 @@
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
 		var name = document.getElementById("name").value
-		var number = 2;
-		// number = number.slice(-6);
+		var number = document.getElementById("numInv").innerHTML;
+		number = number.substring(30,32);
 		var confirmText = "";
 		var selNumInv = number;
 		var radioValue = $("input[name='confirm']:checked").val();
 		var message= "Hola,";
-		// if(radioValue == "confirm"){
-		// 	var numbertext = parseInt(selNumInv) > 1 ? selNumInv+' personas' : '1 persona'
-		// 	message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Victoria%20Elizabeth%20para%20"+numbertext+". A nombre de "+name;
-		// }
-		// else
-		// {
-		// 	message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%Victoria%20Elizabeth. Mi nombre es "+name;
+		if(radioValue == "confirm"){
+			var numbertext = parseInt(selNumInv) > 1 ? selNumInv+' personas' : '1 persona'
+			message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20quinceañera%20de%20Hanna Fabiola%20para%20"+numbertext+". A nombre de "+name;
+		}
+		else
+		{
+			message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20quinceañera%20de%Hanna Fabiola. Mi nombre es "+name;
 			
-		// }
+		}
 
-		// window.open("https://wa.me/+526622232078/?text="+ message,"_blank");
+		window.open("https://wa.me/+526648084602/?text="+ message,"_blank");
 		
 	
 	}
 
-	// let boton = document.querySelector(".btn-flotante")
-    // let audioEtiqueta = document.querySelector("audio")
+	let boton = document.querySelector(".btn-flotante")
+    let audioEtiqueta = document.querySelector("audio")
 
-    // boton.addEventListener("click", () => {
-	// 	audioEtiqueta.setAttribute("src", "./audio/cancion.mp3")
-	// 	var play = boton.classList.contains('play');
-	// 	let icon = document.getElementById("btn-flotante-icon")
-	// 	if(play){
-	// 		icon.classList.remove('icon-pause')
-	// 		icon.classList.add('icon-play')
-	// 		boton.classList.add('pause')
-	// 		boton.classList.remove('play')
-	// 		audioEtiqueta.pause()
-	// 	}else{
-	// 		icon.classList.add('icon-pause')
-	// 		icon.classList.remove('icon-play')
-	// 		boton.classList.remove('pause')
-	// 		boton.classList.add('play')
-	// 		audioEtiqueta.play()
-	// 	}
+    boton.addEventListener("click", () => {
+		audioEtiqueta.setAttribute("src", "./audio/cancion.mp3")
+		var play = boton.classList.contains('play');
+		let icon = document.getElementById("btn-flotante-icon")
+		if(play){
+			icon.classList.remove('icon-pause')
+			icon.classList.add('icon-play')
+			boton.classList.add('pause')
+			boton.classList.remove('play')
+			audioEtiqueta.pause()
+		}else{
+			icon.classList.add('icon-pause')
+			icon.classList.remove('icon-play')
+			boton.classList.remove('pause')
+			boton.classList.add('play')
+			audioEtiqueta.play()
+		}
       
       
-    //   console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-    // });
+      console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+    });
 
 	// Document on load.
 	$(function(){
@@ -354,8 +360,8 @@
 		
 		$("#btnEntrar").click(function(){
 			myModal.hide()
-			// let btn = document.querySelector(".btn-flotante")
-			// btn.click();
+			let btn = document.querySelector(".btn-flotante")
+			btn.click();
 		});
 	});
 
