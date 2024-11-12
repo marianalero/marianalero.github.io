@@ -328,7 +328,7 @@
 		var number = document.getElementById("numInv").innerHTML;
 		number = number.substring(30,32);
 		// number = number.slice(-6);
-		var message = "";
+		var message = "Hola,";
 		var selNumInv = number;
 		var radioValue = $("input[name='confirm']:checked").val();
 		if(radioValue == "confirm"){
