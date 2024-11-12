@@ -304,10 +304,10 @@
 		// + minutes + "Minutes " + seconds + "Seconds ";
 
 		// Display the result in an element with id="demo"
-		document.getElementById("days").innerHTML = formatNumber(days) +"<br/> <span style='font-size: 16px;'>Días</span>";
-		document.getElementById("hours").innerHTML = formatNumber(hours) + "<br/> <span style='font-size: 16px;'>Hrs</span>";
-		document.getElementById("minutes").innerHTML = formatNumber(minutes) + "<br/> <span style='font-size: 16px;'>Mins</span>";
-		document.getElementById("seconds").innerHTML = formatNumber(seconds) + "<br/> <span style='font-size: 16px;'>Segs</span>";
+		document.getElementById("days").innerHTML = formatNumber(days) +"<br/> <span >Días</span>";
+		document.getElementById("hours").innerHTML = formatNumber(hours) + "<br/> <span>Hrs</span>";
+		document.getElementById("minutes").innerHTML = formatNumber(minutes) + "<br/> <span>Mins</span>";
+		document.getElementById("seconds").innerHTML = formatNumber(seconds) + "<br/> <span>Segs</span>";
 
 		// If the count down is finished, write some text 
 		if (distance < 0) {

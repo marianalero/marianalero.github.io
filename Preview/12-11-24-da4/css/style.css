@@ -749,8 +749,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 @media screen and (max-width: 350px) {
-  #qbootstrap-countdown .countdown  {
-    font-size: 24px;
+  #qbootstrap-countdown .countdown span span{
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -790,6 +790,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0;
   display: inline-block;
   font-family: 'PT Serif Caption', serif;;
+}
+#qbootstrap-countdown .countdown span span{
+  font-size: 16px;
 }
 #qbootstrap-countdown .countdown small {
   display: block;
