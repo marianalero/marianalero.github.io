@@ -375,7 +375,18 @@
 		bgVideo();
 
 		$('#asistire').prop('checked',true);
+
+		$("#btnIglesia").click(function(){
+			window.location.href="https://maps.app.goo.gl/Nq4sbHHizQETcHCb8";
+		});
+
+		$("#btnRecepcion").click(function(){
+			window.location.href="https://maps.app.goo.gl/dUAjpWETxBKLAT4L7";
+		});
+		
+		$("#btnMesaRegalos").click(function(){
 			
+		});
 		
 	});
 
