@@ -86,7 +86,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   color: #081534;
-  font-family: "Parisienne",  cursive;
+  font-family: "Pinyon Script",  cursive;
   font-weight: 400;
   text-transform: none;
 }
@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 34px;
   padding-left: 0;
   color: #fff;
-  font-family: "Parisienne", cursive;
+  font-family: "Pinyon Script", cursive;
 }
 #qbootstrap-header.navbar-fixed-top {
   position: fixed !important;
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 80px;
   margin-bottom: 20px;
   font-weight: 300 !important;
-  font-family: 'Parisienne', cursive;
+  font-family: 'Pinyon Script', cursive;
 }
 .qbootstrap-cover .display-tc h2 strong,
 .video-hero .display-tc h2 strong {
@@ -686,7 +686,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-couple h3 {
   font-size: 34px;
-  font-family: "Parisienne", cursive;
+  font-family: "Pinyon Script", cursive;
   color: #c97946;
 }
 @media screen and (max-width: 768px) {
@@ -1182,7 +1182,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 0;
   font-size: 30px;
-  font-family: "Parisienne", cursive;
+  font-family: "Pinyon Script", cursive;
   font-style: italic;
 }
 #qbootstrap-testimonials .arrow-thumb {
@@ -1226,7 +1226,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .groom-men h3 {
-  font-family: "Parisienne", cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 28px;
 }
 
