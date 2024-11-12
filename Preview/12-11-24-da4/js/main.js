@@ -305,8 +305,8 @@
 
 		// Display the result in an element with id="demo"
 		document.getElementById("days").innerHTML = formatNumber(days) +"<br/> <span >Días</span>";
-		document.getElementById("hours").innerHTML = formatNumber(hours) + "<br/> <span>Hrs</span>";
-		document.getElementById("minutes").innerHTML = formatNumber(minutes) + "<br/> <span>Mins</span>";
+		document.getElementById("hours").innerHTML = formatNumber(hours) + "<br/> <span>Horas</span>";
+		document.getElementById("minutes").innerHTML = formatNumber(minutes) + "<br/> <span>Minutos</span>";
 		document.getElementById("seconds").innerHTML = formatNumber(seconds) + "<br/> <span>Segs</span>";
 
 		// If the count down is finished, write some text 
