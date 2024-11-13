@@ -10,6 +10,11 @@
 		var pases = (number == 1) ? " pase" : " pases";
 	document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
 	
+	var type =(params.t == undefined )?0:params.t
+	if(type==1){
+		$(".regalos").hide()
+	}
+
 	// var dateDue = new Date("2024-09-01");
 	// var today = new Date();
 
