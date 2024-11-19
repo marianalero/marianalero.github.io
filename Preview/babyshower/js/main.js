@@ -5,9 +5,7 @@
 	location.search.slice(1).split("&").forEach(function(pair) {
 		pair = pair.split("=");
 		params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);});
-	console.log("se entro a la invitacion",params.number)
-		var number =(params.number == undefined )?0:params.number
-		var pases = (number == 1) ? " pase" : " pases";
+		
 	// document.getElementById("numInv").innerHTML = "Esta invitación es valida por "+ number+ pases;
 	
 	// iPad and iPod detection	
@@ -305,12 +303,8 @@
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
 		var name = document.getElementById("name").value
-		var telefono = document.getElementById("telefono").value
-		var number = document.getElementById("numInv").innerHTML;
-		number = number.substring(30,32);
-		// number = number.slice(-6);
 		var confirmText = "";
-		var selNumInv = number;
+		var selNumInv = $( "#selNumInv" ).val();
 		var radioValue = $("input[name='confirm']:checked").val();
 		if(radioValue == "confirm"){
 			confirmText = "Asistiré"
@@ -320,7 +314,8 @@
 			confirmText = "No asistiré";
 			selNumInv =0;
 		}
-
+		console.log(name);
+		console.log(selNumInv);
 		//https://docs.google.com/forms/d/e/1FAIpQLSdwKuwp1CI6jCh4EbPklpKuezh_DXegDFiULdPyrOCPXON3dg/viewform?usp=pp_url&entry.516140191=mariana&entry.827025270=6663262%7C&entry.1599079301=si&entry.465259973=5
 	 	// let url = "https://docs.google.com/forms/d/e/1FAIpQLSdwKuwp1CI6jCh4EbPklpKuezh_DXegDFiULdPyrOCPXON3dg/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
 		// console.log(url);
