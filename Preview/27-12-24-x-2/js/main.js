@@ -248,7 +248,7 @@
 	
 	const formatNumber = n => ("0" + n).slice(-2);
 	// Set the date we're counting down to
-		var countDownDate = new Date("December 07, 2024 18:00:00").getTime();
+		var countDownDate = new Date("January 17, 2025 18:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
