@@ -379,6 +379,10 @@
 				cuenta.style.display ="none";
 			}
 		});
+
+		$("#btnUbicacion").click(function(){
+			window.open("https://www.google.com/maps/@28.9603332,-111.0575131,16.75z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D","_blank")
+		});
 	});
 
 
