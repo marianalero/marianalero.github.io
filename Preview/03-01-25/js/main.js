@@ -114,9 +114,9 @@
 		$('a:not([class="external"])').click(function(event){
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
-		    $('html, body').animate({
-		        scrollTop: $('[data-section="' + section + '"]').offset().top
-		    }, 500);
+		    // $('html, body').animate({
+		    //     scrollTop: $('[data-section="' + section + '"]').offset().top
+		    // }, 500);
 
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
@@ -369,6 +369,15 @@
 			myModal.hide()
 			let btn = document.querySelector(".btn-flotante")
 			btn.click();
+		});
+
+		$("#btnCroquis").click(function(){
+			var cuenta =document.getElementById("croquis");
+			if(cuenta.style.display=="none"){
+				cuenta.style.display ="block";
+			}else{
+				cuenta.style.display ="none";
+			}
 		});
 	});
 
