@@ -323,25 +323,40 @@
     
 	document.getElementById("confirmar").addEventListener("click", confirmar);
 	function confirmar(){
-		// var name = document.getElementById("name").value
-		// var telefono = document.getElementById("telefono").value
-		// var number = document.getElementById("numInv").innerHTML;
-		// number = number.substring(30,32);
-		// // number = number.slice(-6);
-		// var message = "Hola, ";
-		// var selNumInv = number;
-		// var radioValue = $("input[name='confirm']:checked").val();
-		// if(radioValue == "confirm"){
-		// 	var numbertext = parseInt(selNumInv) > 1 ? selNumInv+' personas' : '1 persona'
-		// 	message+="%20quiero%20confirmar%20mi%20asistencia%20para%20la%20boda%20de%20Dalia Ibeth y Aarón De Jesús%20para%20"+numbertext+". A nombre de "+name;
-		// }
-		// else
-		// {
-		// 	message = message+="%20lamentablemente%20no%20podré%20asistir%20a%20la%20boda%20de%Dalia Ibeth y Aarón De Jesús. Mi nombre es "+name;
-			
-		// }
-
-		// window.open("https://wa.me/+526624057390/?text="+ message,"_blank");
+		var name = document.getElementById("name").value
+	
+		var number = document.getElementById("numInv").innerHTML;
+		number = number.substring(30,32);
+		// number = number.slice(-6);
+		var confirmText = "";
+		var selNumInv = $( "#selNumInv" ).val();
+		var radioValue = $("input[name='confirm']:checked").val();
+		if(radioValue == "confirm"){
+			confirmText = "Asistiré"
+		}
+		else
+		{
+			confirmText = "No Asistiré";
+			selNumInv =0;
+		}
+		// https://docs.google.com/forms/d/e/1FAIpQLSeDkAx0v5Yb7caV0zSy-nURm1rCZ0bBFvTK0SPqogNvrJ55mg/viewform?usp=pp_url&entry.516140191=s&entry.827025270=44&entry.1599079301=si&entry.465259973=0
+	 	// let url = "https://docs.google.com/forms/d/e/1FAIpQLSeDkAx0v5Yb7caV0zSy-nURm1rCZ0bBFvTK0SPqogNvrJ55mg/formResponse?entry.516140191="+name+"&entry.827025270="+telefono+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+		// console.log(url);
+		// fetch(url, { method: 'GET', 
+		// mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
+		// redirect: "follow",
+		// referrer: "no-referrer",
+		// headers: {
+		//   'Content-Type': 'application/x-www-form-urlencoded',
+		// },
+		//  } )
+		// .then(res=> {
+		// 	console.log(res)
+		// 	var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
+		// 	confirmModal.show()
+		// })
+		// .catch(reason => console.log(reason));
+		
 	
 	}
 
@@ -405,6 +420,10 @@
 		$("#btnMesaRegalos").click(function(){
 			window.open("https://www.amazon.com.mx/wedding/registry/22PUZOZ05EG6R","_blank");
 		});
+
+		for (var i = 0; i <= number; i++) {
+			$('#selNumInv').append('<option value="'+i+'">'+i+'</option>');
+		}
 	});
 
 
