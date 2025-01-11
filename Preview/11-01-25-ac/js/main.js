@@ -364,25 +364,25 @@
     let audioEtiqueta = document.querySelector("audio")
 
     boton.addEventListener("click", () => {
-	// 	audioEtiqueta.setAttribute("src", "./audio/cancion.mp3")
-	// 	var play = boton.classList.contains('play');
-	// 	let icon = document.getElementById("btn-flotante-icon")
-	// 	if(play){
-	// 		icon.classList.remove('icon-pause')
-	// 		icon.classList.add('icon-play')
-	// 		boton.classList.add('pause')
-	// 		boton.classList.remove('play')
-	// 		audioEtiqueta.pause()
-	// 	}else{
-	// 		icon.classList.add('icon-pause')
-	// 		icon.classList.remove('icon-play')
-	// 		boton.classList.remove('pause')
-	// 		boton.classList.add('play')
-	// 		audioEtiqueta.play()
-	// 	}
+		audioEtiqueta.setAttribute("src", "./audio/cancion.mp3")
+		var play = boton.classList.contains('play');
+		let icon = document.getElementById("btn-flotante-icon")
+		if(play){
+			icon.classList.remove('icon-pause')
+			icon.classList.add('icon-play')
+			boton.classList.add('pause')
+			boton.classList.remove('play')
+			audioEtiqueta.pause()
+		}else{
+			icon.classList.add('icon-pause')
+			icon.classList.remove('icon-play')
+			boton.classList.remove('pause')
+			boton.classList.add('play')
+			audioEtiqueta.play()
+		}
       
       
-    //   console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+      console.log(`Reproduciendo: ${audioEtiqueta.src}`)
     });
 
 	document.getElementById("btnLunaMiel").addEventListener("click", verCuenta);
@@ -395,6 +395,31 @@
 		}else{
 			cuenta.style.display ="none";
 		}
+		
+	}
+
+	document.getElementById("btnMesaRegalos").addEventListener("click", verMesa);
+
+
+	function verMesa(){
+		window.open("https://mesaderegalos.liverpool.com.mx/milistaderegalos/51598826","_blank")
+		
+	}
+
+	document.getElementById("btnIglesia").addEventListener("click", verIglesia);
+
+
+	function verIglesia(){
+		window.open("https://maps.app.goo.gl/TkZAwqjKcKTMSsLR8","_blank")
+		
+	}
+
+	
+	document.getElementById("btnRecepcion").addEventListener("click", verRecepcion);
+
+
+	function verRecepcion(){
+		window.open("https://maps.app.goo.gl/wk6Jewkj7jSRSNW6A","_blank")
 		
 	}
 	// Document on load.
