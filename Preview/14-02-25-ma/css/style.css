@@ -59,7 +59,7 @@ p {
   
   margin-bottom: 10px;
   font-size: 22px;
-  color:#000
+  color:#996535
 }
 .subtitle-white{
   /* font-family: 'Cormorant Garamond', serif; */
@@ -70,7 +70,7 @@ p {
 }
 .texto{
   font-size: 14px;
-  color:#000;
+  color:#996535;
 
   margin-top: 10px;
   margin-bottom: 10px;
@@ -554,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #qbootstrap-slider-hero .flexslider .flex-control-nav {
   bottom: 7em;
-  z-index: 1000;
+  z-index: 1996535;
 }
 #qbootstrap-slider-hero .flexslider .flex-control-nav li a {
   background: rgba(255, 255, 255, 0.5);
@@ -1853,7 +1853,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   width: 2px;
-  background: #000;
+  background: #996535;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1882,8 +1882,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 12px;
   top: calc(65%);
   right: -6px;
-  background: #000;
-  border: 2px solid #000;
+  background: #996535;
+  border: 2px solid #996535;
   border-radius: 16px;
   z-index: 1;
 }
@@ -1899,7 +1899,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   top: calc(65% + 4px);
   right: 4px;
-  background: #000;
+  background: #996535;
   z-index: 1;
 }
 
@@ -1914,7 +1914,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #000;
+  color: #996535;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -1969,7 +1969,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color:#000;
+  color:#996535;
   text-align: end;
   
 }
@@ -1978,7 +1978,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
   font-size: 24px;
   font-weight: normal;
-  color:#000;
+  color:#996535;
   text-align: start;
   
 }
@@ -1987,7 +1987,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000;
+  color: #996535;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -1999,7 +1999,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: #000;
+  color: #996535;
   font-weight: 700;
   margin-top: 30px;
   text-align:center;
@@ -2076,12 +2076,12 @@ h1, h2, h3, h4, h5, h6 {
   {
     /* left: calc(100% + 6px);  */
     width: 35px;
-    border-color: transparent #000 transparent transparent;
+    border-color: transparent #996535 transparent transparent;
   }
   .intinerario-container.intinerario-left::before{
     /* right: calc(50% + 10px); */
     width: 35px;
-    border-color: transparent #000  transparent transparent;
+    border-color: transparent #996535  transparent transparent;
   }
 
   .intinerario-container.intinerario-left .intinerario-date,
@@ -2113,7 +2113,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px 0;
     /* font-size:20px ; */
     font-weight: normal;
-    color: #000;
+    color: #996535;
     text-align: center;
     
   }
@@ -2121,7 +2121,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 10px 0;
     /* font-size: 20px; */
     font-weight: normal;
-    color: #000;
+    color: #996535;
     text-align: center;
     
   }
