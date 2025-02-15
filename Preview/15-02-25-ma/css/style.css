@@ -59,7 +59,7 @@ p {
   
   margin-bottom: 10px;
   font-size: 22px;
-  color:#996535
+  color:black
 }
 .subtitle-white{
   /* font-family: 'Cormorant Garamond', serif; */
@@ -70,7 +70,7 @@ p {
 }
 .texto{
   font-size: 14px;
-  color:#996535;
+  color:black;
 
   margin-top: 10px;
   margin-bottom: 10px;
@@ -376,6 +376,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   position: relative;
   }
+
+  .qbootstrap-bg {
+    background: rgba(0, 0, 0, 0.03);
+  }
+  
 }
 
 .qbootstrap-overlay {
@@ -740,6 +745,11 @@ h1, h2, h3, h4, h5, h6 {
    height: 50vh;
    background-position-x: 40%!important;
   }
+  .qbootstrap-bg {
+    background-size: cover;
+    position: relative;
+    background-position-x: 40%!important;
+  }
 }
 #qbootstrap-countdown .section-heading {
   margin-bottom: 0 !important;
@@ -758,7 +768,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #qbootstrap-countdown .section-heading .datewed {
-  font-size: 45px;
+  font-size: 30px;
   color: white;
   font-family: 'Pinyon Script';
 }
