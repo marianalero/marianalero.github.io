@@ -418,7 +418,7 @@
 		});
 		
 		$("#btnMesaRegalos").click(function(){
-			// window.open("https://www.amazon.com.mx/wedding/registry/22PUZOZ05EG6R","_blank");
+			window.open("https://sinenvolturas.com/bodadehidaileonardo","_blank");
 		});
 
 		for (var i = 0; i <= number; i++) {
