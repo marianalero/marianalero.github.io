@@ -319,7 +319,7 @@
 		}
 	
 
-		window.open("https://wa.me/+16024417172/?text="+ message,"_blank");
+		window.open("https://wa.me/+16024417172/?text="+ confirmText,"_blank");
 	 	
 		
 	
@@ -342,7 +342,7 @@
 		}
 	
 
-		window.open("https://wa.me/+16024417171/?text="+ message,"_blank");
+		window.open("https://wa.me/+16024417171/?text="+ confirmText,"_blank");
 	 	
 		
 	
