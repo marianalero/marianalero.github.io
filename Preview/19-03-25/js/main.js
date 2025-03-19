@@ -305,7 +305,6 @@
 	document.getElementById("confirmarUNO").addEventListener("click", confirmar);
 	function confirmar(){
 		var name = document.getElementById("name").value
-		var telefono = document.getElementById("telefono").value
 		var number = document.getElementById("numInv").innerHTML;
 		number = number.substring(30,32);
 		var confirmText = "Hola,";
@@ -328,7 +327,7 @@
 	document.getElementById("confirmarDOS").addEventListener("click", confirmar);
 	function confirmar(){
 		var name = document.getElementById("name").value
-		var telefono = document.getElementById("telefono").value
+	
 		var number = document.getElementById("numInv").innerHTML;
 		number = number.substring(30,32);
 		var confirmText = "Hola,";
