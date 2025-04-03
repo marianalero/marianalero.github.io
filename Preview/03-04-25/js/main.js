@@ -408,7 +408,7 @@
 
 
 	function verIglesia(){
-		window.open("https://maps.app.goo.gl/TkZAwqjKcKTMSsLR8","_blank")
+		// window.open("https://maps.app.goo.gl/TkZAwqjKcKTMSsLR8","_blank")
 		
 	}
 
@@ -417,7 +417,7 @@
 
 
 	function verRecepcion(){
-		window.open("https://maps.app.goo.gl/wk6Jewkj7jSRSNW6A","_blank")
+		// window.open("https://maps.app.goo.gl/wk6Jewkj7jSRSNW6A","_blank")
 		
 	}
 	// Document on load.
