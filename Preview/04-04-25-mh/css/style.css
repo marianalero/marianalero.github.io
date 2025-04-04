@@ -404,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 }
 #img-portada{
-  width: calc(100vw - 80%)!important;
+  width: calc(100vw - 80%);
 }
 .qbootstrap-cover, .video-hero {
   background-size: contain;
