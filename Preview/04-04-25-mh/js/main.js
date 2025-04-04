@@ -413,7 +413,18 @@
 		$("#btnRecepcion").click(function(){
 			window.open("https://maps.app.goo.gl/aUFryz9sKi4Yukdd9","_blank");
 		});
-		
+		document.getElementById("btnLunaMiel").addEventListener("click", verCuenta);
+
+
+		function verCuenta(){
+			var cuenta =document.getElementById("cuenta");
+			if(cuenta.style.display=="none"){
+				cuenta.style.display ="block";
+			}else{
+				cuenta.style.display ="none";
+			}
+			
+		}
 	
 
 		for (var i = 0; i <= number; i++) {
