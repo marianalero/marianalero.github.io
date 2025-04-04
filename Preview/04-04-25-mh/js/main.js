@@ -405,8 +405,8 @@
 		myModal.show()
 		$("#btnEntrar").click(function(){
 			myModal.hide()
-			let btn = document.querySelector(".btn-flotante")
-			btn.click();
+			// let btn = document.querySelector(".btn-flotante")
+			// btn.click();
 		});
 		
 
