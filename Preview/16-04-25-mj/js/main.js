@@ -411,10 +411,11 @@
 		
 
 		$("#btnRecepcion").click(function(){
-			window.open("https://maps.app.goo.gl/hiyYJVZ8HQTPqRfw6","_blank");
+			window.open("https://maps.app.goo.gl/HPS1dfwR7Uyp2KEW7","_blank");
+			
 		});
 		$("#btnIglesia").click(function(){
-			window.open("https://maps.app.goo.gl/HPS1dfwR7Uyp2KEW7","_blank");
+			window.open("https://maps.app.goo.gl/hiyYJVZ8HQTPqRfw6","_blank");
 		});
 
 		for (var i = 0; i <= number; i++) {
