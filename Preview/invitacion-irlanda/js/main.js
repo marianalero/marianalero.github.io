@@ -282,7 +282,7 @@
 	
 	const formatNumber = n => (n<10) ? ("0" + n).slice(-2) : n;
 	// Set the date we're counting down to
-		var countDownDate = new Date("March 14, 2026 18:00:00").getTime();
+		var countDownDate = new Date("November 8, 2025 18:00:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -339,8 +339,8 @@
 			confirmText = "No Asistiré";
 			selNumInv =0;
 		}
-		//https://docs.google.com/forms/d/e/1FAIpQLSeG1_3rXwcGoL0yDzhVTaCU_09jJahIiAIH59PrQh0ZHxZYig/viewform?usp=pp_url&entry.516140191=marian&entry.827025270=6666&entry.1599079301=si&entry.465259973=1
-	 	// let url = "https://docs.google.com/forms/d/e/1FAIpQLSeG1_3rXwcGoL0yDzhVTaCU_09jJahIiAIH59PrQh0ZHxZYig/formResponse?entry.516140191="+name+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+		// //https://docs.google.com/forms/d/e/1FAIpQLScr7nyU31EVwadbyyfLhWoC2IJCGZKR9UgQakK_aZacbJHVnA/viewform?usp=pp_url&entry.516140191=marian&entry.1599079301=lerma&entry.465259973=123
+	 	// let url = "https://docs.google.com/forms/d/e/1FAIpQLScr7nyU31EVwadbyyfLhWoC2IJCGZKR9UgQakK_aZacbJHVnA/formResponse?entry.516140191="+name+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
 		// console.log(url);
 		// fetch(url, { method: 'GET', 
 		// mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
@@ -409,25 +409,22 @@
 			btn.click();
 		});
 		
-		$("#btnIglesia").click(function(){
-			window.open("https://maps.app.goo.gl/d42E2sTFLNXjjd1P6","_blank");
-		});
 
 		$("#btnRecepcion").click(function(){
-			window.open("https://maps.app.goo.gl/3pTYLGABc4begYtz8","_blank");
+			window.open("https://maps.app.goo.gl/UggjDhFTEB4AqnzZ6","_blank");
+			
 		});
-		
-		$("#btnMesaRegalosUno").click(function(){
-			window.open("https://mesaderegalos.liverpool.com.mx/milistaderegalos/51651078","_blank");
-		});
-
-		$("#btnMesaRegalosDos").click(function(){
-			window.open("https://www.amazon.com.mx/wedding/share/BodaJorgeyAnayancy","_blank");
+		$("#btnIglesia").click(function(){
+			window.open("https://maps.app.goo.gl/V42uovQorjenSC5t5","_blank");
 		});
 
 		for (var i = 0; i <= number; i++) {
 			$('#selNumInv').append('<option value="'+i+'">'+i+'</option>');
 		}
+
+	
+
+		
 	});
 
 
