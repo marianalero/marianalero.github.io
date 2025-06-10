@@ -339,23 +339,23 @@
 			confirmText = "No Asistiré";
 			selNumInv =0;
 		}
-		// //https://docs.google.com/forms/d/e/1FAIpQLScr7nyU31EVwadbyyfLhWoC2IJCGZKR9UgQakK_aZacbJHVnA/viewform?usp=pp_url&entry.516140191=marian&entry.1599079301=lerma&entry.465259973=123
-	 	// let url = "https://docs.google.com/forms/d/e/1FAIpQLScr7nyU31EVwadbyyfLhWoC2IJCGZKR9UgQakK_aZacbJHVnA/formResponse?entry.516140191="+name+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
-		// console.log(url);
-		// fetch(url, { method: 'GET', 
-		// mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
-		// redirect: "follow",
-		// referrer: "no-referrer",
-		// headers: {
-		//   'Content-Type': 'application/x-www-form-urlencoded',
-		// },
-		//  } )
-		// .then(res=> {
-		// 	console.log(res)
-		// 	var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
-		// 	confirmModal.show()
-		// })
-		// .catch(reason => console.log(reason));
+		//https://docs.google.com/forms/d/e/1FAIpQLSfCvpbT2QsZEhVbUcPu2DcuS0wh6TkDuPh61WfRg9uJkaWa5g/viewform?usp=pp_url&entry.516140191=s&entry.1599079301=s&entry.465259973=3
+	 	let url = "https://docs.google.com/forms/d/e/1FAIpQLSfCvpbT2QsZEhVbUcPu2DcuS0wh6TkDuPh61WfRg9uJkaWa5g/formResponse?entry.516140191="+name+"&entry.1599079301="+confirmText+"&entry.465259973="+selNumInv+'&submit=Submit';
+		console.log(url);
+		fetch(url, { method: 'GET', 
+		mode: "no-cors", // apparently Google will only submit a form if "mode" is "no-cors"
+		redirect: "follow",
+		referrer: "no-referrer",
+		headers: {
+		  'Content-Type': 'application/x-www-form-urlencoded',
+		},
+		 } )
+		.then(res=> {
+			console.log(res)
+			var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'))
+			confirmModal.show()
+		})
+		.catch(reason => console.log(reason));
 		
 	
 	}
